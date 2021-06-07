@@ -26,7 +26,7 @@ class CoursesFactory extends Factory
                 'img' => $this->faker->unique()->safeEmail(),
                 'description' => $this->faker->name(),
                 'price' =>  $this->faker->numberBetween(1,5),
-                'teacher_id' =>  $this->faker->numberBetween(1,10),
+                'user_id' =>  $this->faker->numberBetween(1,10),
             ];
     }
 }

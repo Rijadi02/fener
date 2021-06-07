@@ -19,7 +19,7 @@ class CreateCoursesTable extends Migration
             $table->string('img');
             $table->string('description');
             $table->float('price')->nullable();
-            $table->unsignedInteger('teacher_id');
+            $table->unsignedInteger('user_id');
             $table->timestamps();
 
         });
