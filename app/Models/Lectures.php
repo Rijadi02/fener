@@ -13,4 +13,10 @@ class Lectures extends Model
     {
         return $this->belongsTo(Courses::class,'courses_id','id');
     }
+
+
+    public function homeworks()
+    {
+        return $this->hasMany(Homework::class);
+    }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Courses;
 use App\Models\Lectures;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -26,7 +27,9 @@ class LecturesFactory extends Factory
             'date' => $this->faker->date(),
             'video_link' => $this->faker->name(),
             'live_link' => $this->faker->name(),
-            'courses_id' =>  $this->faker->numberBetween(1,10),
+            'courses_id' => function() {
+                    return Courses::all()->random();
+            }
         ];
     }
 }

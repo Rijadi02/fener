@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Homework;
+use App\Models\Lectures;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class HomeworkFactory extends Factory
@@ -22,7 +23,13 @@ class HomeworkFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->name(),
+                'file' => $this->faker->name(),
+                'deadline' => $this->faker->date(),
+                'price' =>  $this->faker->numberBetween(1,5),
+                'lecture_id' => function() {
+                    return Lectures::all()->random();
+                }
         ];
     }
 }

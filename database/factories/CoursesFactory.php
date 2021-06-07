@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Courses;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class CoursesFactory extends Factory
@@ -26,7 +27,9 @@ class CoursesFactory extends Factory
                 'img' => $this->faker->unique()->safeEmail(),
                 'description' => $this->faker->name(),
                 'price' =>  $this->faker->numberBetween(1,5),
-                'user_id' =>  $this->faker->numberBetween(1,10),
+                'user_id' => function() {
+                    return User::all()->random();
+                },
             ];
     }
 }
