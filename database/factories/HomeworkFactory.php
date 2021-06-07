@@ -26,7 +26,6 @@ class HomeworkFactory extends Factory
             'title' => $this->faker->name(),
                 'file' => $this->faker->name(),
                 'deadline' => $this->faker->date(),
-                'price' =>  $this->faker->numberBetween(1,5),
                 'lecture_id' => function() {
                     return Lectures::all()->random();
                 }
