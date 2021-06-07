@@ -21,8 +21,12 @@ class CoursesFactory extends Factory
      */
     public function definition()
     {
-        return [
-            //
-        ];
+            return [
+                'title' => $this->faker->name(),
+                'img' => $this->faker->unique()->safeEmail(),
+                'description' => $this->faker->name(),
+                'price' =>  $this->faker->numberBetween(1,5),
+                'teacher_id' =>  $this->faker->numberBetween(1,10),
+            ];
     }
 }

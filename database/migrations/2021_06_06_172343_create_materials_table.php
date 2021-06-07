@@ -18,6 +18,8 @@ class CreateMaterialsTable extends Migration
             $table->string('title')->nullable();
             $table->string('link');
             $table->integer('lecture_id')->nullable();
+            $table->timestamps();
+
         });
     }
 

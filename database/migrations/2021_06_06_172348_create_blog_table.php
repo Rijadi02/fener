@@ -18,6 +18,8 @@ class CreateBlogTable extends Migration
             $table->string('title');
             $table->integer('img');
             $table->string('content');
+            $table->timestamps();
+
         });
     }
 

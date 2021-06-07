@@ -22,7 +22,11 @@ class LecturesFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->name(),
+            'date' => $this->faker->date(),
+            'video_link' => $this->faker->name(),
+            'live_link' => $this->faker->name(),
+            'courses_id' =>  $this->faker->numberBetween(1,10),
         ];
     }
 }

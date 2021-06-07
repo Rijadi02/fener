@@ -19,7 +19,9 @@ class CreateLecturesTable extends Migration
             $table->dateTime('date')->nullable();
             $table->string('live_link')->nullable();
             $table->string('video_link')->nullable();
-            $table->unsignedInteger('course_id')->nullable();
+            $table->unsignedInteger('courses_id')->nullable();
+            $table->timestamps();
+
         });
     }
 

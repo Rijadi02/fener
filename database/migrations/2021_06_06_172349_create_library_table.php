@@ -21,6 +21,8 @@ class CreateLibraryTable extends Migration
             $table->string('img');
             $table->string('link')->nullable();
             $table->string('file')->nullable();
+            $table->timestamps();
+
         });
     }
 

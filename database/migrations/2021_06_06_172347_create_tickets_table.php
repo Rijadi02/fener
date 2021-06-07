@@ -18,6 +18,8 @@ class CreateTicketsTable extends Migration
             $table->string('title');
             $table->string('content');
             $table->integer('user_id');
+            $table->timestamps();
+
         });
     }
 

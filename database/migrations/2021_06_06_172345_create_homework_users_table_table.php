@@ -20,6 +20,8 @@ class CreateHomeworkUsersTableTable extends Migration
             $table->string('file')->nullable();
             $table->dateTime('time')->nullable();
             $table->float('grade')->nullable();
+            $table->timestamps();
+
         });
     }
 
