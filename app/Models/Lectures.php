@@ -19,4 +19,9 @@ class Lectures extends Model
     {
         return $this->hasMany(Homework::class);
     }
+
+    public function materials()
+    {
+        return $this->hasMany(Materials::class);
+    }
 }
