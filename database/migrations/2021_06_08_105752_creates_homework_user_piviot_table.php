@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHomeworkUsersTableTable extends Migration
+class CreatesHomeworkUserPiviotTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateHomeworkUsersTableTable extends Migration
      */
     public function up()
     {
-        Schema::create('homework_users_table', function (Blueprint $table) {
+        Schema::create('homework_user', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('homework_id')->unsigned();
@@ -32,6 +32,6 @@ class CreateHomeworkUsersTableTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('homework_users_table');
+        Schema::dropIfExists('homework_user');
     }
 }

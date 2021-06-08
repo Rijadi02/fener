@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCoursesUsersTableTable extends Migration
+class CreatesCourseUserPiviotTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateCoursesUsersTableTable extends Migration
      */
     public function up()
     {
-        Schema::create('courses_users_table', function (Blueprint $table) {
+        Schema::create('course_user', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
             $table->integer('course_id');
             $table->timestamps();
-
         });
     }
 
@@ -29,6 +28,6 @@ class CreateCoursesUsersTableTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('courses_users_table');
+        Schema::dropIfExists('course_user');
     }
 }
