@@ -17,7 +17,9 @@ class CreateMaterialsTable extends Migration
             $table->increments('id');
             $table->string('title')->nullable();
             $table->string('link');
-            $table->integer('lecture_id')->nullable();
+            $table->integer('lecture_id')->unsigned()->nullable();;
+            $table->foreign('lecture_id')->references('id')->on("lectures")->onDelete('cascade');
+
             $table->timestamps();
 
         });
