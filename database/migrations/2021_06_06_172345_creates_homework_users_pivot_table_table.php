@@ -15,9 +15,8 @@ class CreateHomeworkUsersTableTable extends Migration
     {
         Schema::create('homework_users_table', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
-             $table->integer('homework_id')->unsigned()->nullable();;
-            $table->foreign('homework_id')->references('id')->on("homework")->onDelete('cascade');
+            $table->integer('user_id')->unsigned();
+            $table->integer('homework_id')->unsigned();
             $table->string('file')->nullable();
             $table->dateTime('time')->nullable();
             $table->float('grade')->nullable();

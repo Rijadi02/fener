@@ -15,4 +15,10 @@ class Homework extends Model
         return $this->belongsTo(Lectures::class,'lecture_id','id');
     }
 
+
+    public function submissions()
+    {
+        return $this->belongsToMany(User::class);
+    }
+
 }
