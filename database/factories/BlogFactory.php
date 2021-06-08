@@ -22,7 +22,10 @@ class BlogFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->sentence(),
+            'img' => "http://lorempixel.com/400/200/sports/",
+            'content' =>  $this->faker->sentence(),
         ];
+
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Lectures;
 use App\Models\Materials;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -22,7 +23,11 @@ class MaterialsFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->sentence(),
+            'link' => $this->faker->url(),
+            'lecture_id' => function() {
+                return Lectures::all()->random();
+        }
         ];
     }
 }

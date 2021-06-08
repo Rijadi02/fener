@@ -23,10 +23,10 @@ class CoursesFactory extends Factory
     public function definition()
     {
             return [
-                'title' => $this->faker->name(),
-                'img' => $this->faker->unique()->safeEmail(),
-                'description' => $this->faker->name(),
-                'price' =>  $this->faker->numberBetween(1,5),
+                'title' => $this->faker->sentence(),
+                'img' => "http://lorempixel.com/400/200/sports/",
+                'description' => $this->faker->sentence(),
+                'price' =>  $this->faker->numberBetween(1,500),
                 'user_id' => function() {
                     return User::all()->random();
                 },

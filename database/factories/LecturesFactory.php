@@ -23,10 +23,10 @@ class LecturesFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->name(),
+            'title' => $this->faker->sentence(),
             'date' => $this->faker->date(),
-            'video_link' => $this->faker->name(),
-            'live_link' => $this->faker->name(),
+            'video_link' => $this->faker->url(),
+            'live_link' => $this->faker->url(),
             'courses_id' => function() {
                     return Courses::all()->random();
             }

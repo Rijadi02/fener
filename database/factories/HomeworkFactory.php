@@ -23,12 +23,12 @@ class HomeworkFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->name(),
-                'file' => $this->faker->name(),
-                'deadline' => $this->faker->date(),
-                'lecture_id' => function() {
-                    return Lectures::all()->random();
-                }
+            'title' => $this->faker->sentence(),
+            'file' => "http://lorempixel.com/400/200/sports/",
+            'deadline' => $this->faker->date(),
+            'lecture_id' => function() {
+                return Lectures::all()->random();
+            }
         ];
     }
 }

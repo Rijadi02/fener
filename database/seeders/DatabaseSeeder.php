@@ -2,9 +2,13 @@
 
 namespace Database\Seeders;
 
+use App\Models\Blog;
 use App\Models\Courses;
+use App\Models\Gallery;
 use App\Models\Homework;
 use App\Models\Lectures;
+use App\Models\Library;
+use App\Models\Materials;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -22,5 +26,10 @@ class DatabaseSeeder extends Seeder
         Courses::factory(10)->create();
         Lectures::factory(100)->create();
         Homework::factory(100)->create();
+        Materials::factory(100)->create();
+        Gallery::factory(10)->create();
+        Blog::factory(15)->create();
+        Library::factory(9)->create();
+
     }
 }

@@ -22,7 +22,13 @@ class LibraryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->sentence(),
+            'author' => $this->faker->name(),
+            'description' => $this->faker->sentence(),
+            'img' => "http://lorempixel.com/400/200/sports/",
+            'link' => $this->faker->url(),
+            'file' => "http://lorempixel.com/400/200/sports/",
         ];
+
     }
 }
