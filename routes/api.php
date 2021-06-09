@@ -37,12 +37,17 @@ Route::apiResource('/galleries', GalleryController::class);
 
 //courses api's
 Route::apiResource('/courses', CoursesController::class);
-Route::get('/{course}/lectures/', [CoursesController::class, 'get_course_lectures']);
+Route::get('/courses/{course}/lectures/', [CoursesController::class, 'get_course_lectures']);
+Route::get('/courses/{course}/homeworks/', [CoursesController::class, 'get_course_homeworks']);
+Route::get('/courses/{course}/materials/', [CoursesController::class, 'get_course_materials']);
 
 //lectures api's
 //all lectures
 Route::apiResource('/lectures', LecturesController::class);
-Route::get('/{lecture}/homeworks/', [LecturesController::class, 'get_lecture_homework']);
+Route::get('/lectures/{lecture}/homeworks/', [LecturesController::class, 'get_lecture_homework']);
+Route::get('/lectures/{lecture}/materials/', [LecturesController::class, 'get_lecture_material']);
+
+
 
 
 //homework api's

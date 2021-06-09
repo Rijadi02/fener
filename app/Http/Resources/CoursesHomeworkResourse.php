@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class HomeworkResource extends JsonResource
+class CoursesHomeworkResourse extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,8 +16,11 @@ class HomeworkResource extends JsonResource
     {
         return [
             "title" => $this->title,
-            "file" => $this->file,
-            "deadline" => $this->deadline,
+            "image" => $this->img,
+            "description" => $this->description,
+            "price" => $this->price,
+            "homework" => LectureHomeworkResource::collection($this->lectures)
+
         ];
     }
 }

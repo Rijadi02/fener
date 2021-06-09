@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\CoursesHomeworkResourse;
+use App\Http\Resources\CoursesMaterialsResource;
+
 use App\Http\Resources\CoursesResource;
 use App\Models\Courses;
 use Illuminate\Http\Request;
@@ -24,6 +27,17 @@ class CoursesController extends Controller
     {
         return new CoursesResource($course);
     }
+
+    public function get_course_homeworks(Courses $course)
+    {
+        return new CoursesHomeworkResourse($course);
+    }
+
+    public function get_course_materials(Courses $course)
+    {
+        return new CoursesMaterialsResource($course);
+    }
+
 
 
     /**

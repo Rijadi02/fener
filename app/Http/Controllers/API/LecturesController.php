@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\LectureHomeworkResource;
+use App\Http\Resources\LectureMaterialsResource;
 use App\Http\Resources\LecturesResource;
 use App\Models\Lectures;
 use Illuminate\Http\Request;
@@ -23,6 +24,10 @@ class LecturesController extends Controller
     public function get_lecture_homework(Lectures $lecture)
     {
         return new LectureHomeworkResource($lecture);
+    }
+    public function get_lecture_material(Lectures $lecture)
+    {
+        return new LectureMaterialsResource($lecture);
     }
 
     /**
