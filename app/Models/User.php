@@ -17,6 +17,11 @@ class User extends Authenticatable
         return $this->hasMany(Courses::class);
     }
 
+    public function tickets()
+    {
+        return $this->hasMany(Tickets::class);
+    }
+
     public function submitted()
     {
         return $this->belongsToMany(Homework::class);

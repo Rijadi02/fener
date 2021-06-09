@@ -4,6 +4,8 @@ use App\Http\Controllers\API\BlogController;
 use App\Http\Controllers\API\CoursesController;
 use App\Http\Controllers\API\GalleryController;
 use App\Http\Controllers\API\LecturesController;
+use App\Http\Controllers\API\LibraryController;
+use App\Http\Controllers\API\TicketsController;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -31,6 +33,16 @@ Route::apiResource('/blogs', BlogController::class);
 
 //gallery api's
 Route::apiResource('/galleries', GalleryController::class);
+
+//libary
+Route::apiResource('/libraries', LibraryController::class);
+
+//tickets
+Route::apiResource('/tickets', TicketsController::class);
+
+
+
+
 
 
 //working on it

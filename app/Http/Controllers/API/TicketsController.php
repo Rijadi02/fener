@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Http\Resources\LibraryResource;
-use App\Models\Library;
+use App\Http\Resources\TicketsResourse;
+use App\Models\Tickets;
 use Illuminate\Http\Request;
 
-class LibraryController extends Controller
+class TicketsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +15,7 @@ class LibraryController extends Controller
      */
     public function index()
     {
-        return LibraryResource::collection(Library::all());
+        return TicketsResourse::collection(Tickets::all());
     }
 
     /**
@@ -33,10 +32,10 @@ class LibraryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Library  $library
+     * @param  \App\Models\Tickets  $tickets
      * @return \Illuminate\Http\Response
      */
-    public function show(Library $library)
+    public function show(Tickets $tickets)
     {
         //
     }
@@ -45,10 +44,10 @@ class LibraryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Library  $library
+     * @param  \App\Models\Tickets  $tickets
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Library $library)
+    public function update(Request $request, Tickets $tickets)
     {
         //
     }
@@ -56,10 +55,10 @@ class LibraryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Library  $library
+     * @param  \App\Models\Tickets  $tickets
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Library $library)
+    public function destroy(Tickets $tickets)
     {
         //
     }
