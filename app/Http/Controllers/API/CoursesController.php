@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\CoursesResource;
 use App\Models\Courses;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CoursesController extends Controller
 {
@@ -15,8 +17,14 @@ class CoursesController extends Controller
      */
     public function index()
     {
-        //
+        return CoursesResource::collection(Courses::all());
     }
+
+    public function get_course_lectures(Courses $course)
+    {
+        return new CoursesResource($course);
+    }
+
 
     /**
      * Store a newly created resource in storage.

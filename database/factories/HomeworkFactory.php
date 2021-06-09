@@ -26,7 +26,7 @@ class HomeworkFactory extends Factory
             'title' => $this->faker->sentence(),
             'file' => "http://lorempixel.com/400/200/sports/",
             'deadline' => $this->faker->date(),
-            'lecture_id' => function() {
+            'lectures_id' => function() {
                 return Lectures::all()->random();
             }
         ];

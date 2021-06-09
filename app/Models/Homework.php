@@ -12,7 +12,7 @@ class Homework extends Model
 
     public function lecture()
     {
-        return $this->belongsTo(Lectures::class,'lecture_id','id');
+        return $this->belongsTo(Lectures::class,'lectures_id','id');
     }
 
 

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\LectureHomeworkResource;
+use App\Http\Resources\LecturesResource;
 use App\Models\Lectures;
 use Illuminate\Http\Request;
 
@@ -15,7 +17,12 @@ class LecturesController extends Controller
      */
     public function index()
     {
-        //
+        return LecturesResource::collection(Lectures::all());
+
+    }
+    public function get_lecture_homework(Lectures $lecture)
+    {
+        return new LectureHomeworkResource($lecture);
     }
 
     /**

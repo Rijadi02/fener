@@ -25,7 +25,7 @@ class MaterialsFactory extends Factory
         return [
             'title' => $this->faker->sentence(),
             'link' => $this->faker->url(),
-            'lecture_id' => function() {
+            'lectures_id' => function() {
                 return Lectures::all()->random();
         }
         ];

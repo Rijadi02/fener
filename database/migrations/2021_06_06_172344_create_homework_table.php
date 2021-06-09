@@ -19,8 +19,8 @@ class CreateHomeworkTable extends Migration
             $table->string('file')->nullable();
             $table->date('deadline')->nullable();
 
-            $table->integer('lecture_id')->unsigned()->nullable();;
-            $table->foreign('lecture_id')->references('id')->on("lectures")->onDelete('cascade');
+            $table->integer('lectures_id')->unsigned()->nullable();;
+            $table->foreign('lectures_id')->references('id')->on("lectures")->onDelete('cascade');
 
             $table->timestamps();
 
