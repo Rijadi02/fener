@@ -9,6 +9,7 @@ use App\Models\Homework;
 use App\Models\Lectures;
 use App\Models\Library;
 use App\Models\Materials;
+use App\Models\Tickets;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -30,6 +31,7 @@ class DatabaseSeeder extends Seeder
         Gallery::factory(10)->create();
         Blog::factory(15)->create();
         Library::factory(9)->create();
+        Tickets::factory(7)->create();
 
     }
 }

@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
-use App\Http\Resources\TicketsResourse;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\TicketsResource;
 use App\Models\Tickets;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,7 @@ class TicketsController extends Controller
      */
     public function index()
     {
-        return TicketsResourse::collection(Tickets::all());
+        return TicketsResource::collection(Tickets::all());
     }
 
     /**

@@ -4,7 +4,8 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class TicketsResourse extends JsonResource
+class
+TicketsResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -17,7 +18,7 @@ class TicketsResourse extends JsonResource
         return [
             "title" => $this->title,
             "content" => $this->author,
-            "user" => UserResource::collection($this->user)
+            "user" => new UserResource($this->user)
 
         ];
     }
