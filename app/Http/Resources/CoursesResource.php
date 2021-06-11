@@ -19,7 +19,7 @@ class CoursesResource extends JsonResource
             "image" => $this->img,
             "description" => $this->description,
             "price" => $this->price,
-            "user" => new UserResource($this->user),
+            "teacher" => new UserResource($this->user),
             "lectures" => LecturesResource::collection($this->lectures)
 
         ];

@@ -6,6 +6,8 @@ use App\Http\Controllers\API\GalleryController;
 use App\Http\Controllers\API\LecturesController;
 use App\Http\Controllers\API\LibraryController;
 use App\Http\Controllers\API\TicketsController;
+use App\Http\Controllers\API\UserController;
+
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -40,6 +42,8 @@ Route::apiResource('/libraries', LibraryController::class);
 //tickets
 Route::apiResource('/tickets', TicketsController::class);
 
+//tickets
+Route::apiResource('/enrollments', UserController::class)->middleware('auth:api');
 
 
 

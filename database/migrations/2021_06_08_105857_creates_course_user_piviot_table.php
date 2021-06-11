@@ -13,10 +13,10 @@ class CreatesCourseUserPiviotTable extends Migration
      */
     public function up()
     {
-        Schema::create('course_user', function (Blueprint $table) {
+        Schema::create('courses_user', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
-            $table->integer('course_id');
+            $table->integer('courses_id');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreatesCourseUserPiviotTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('course_user');
+        Schema::dropIfExists('courses_user');
     }
 }
