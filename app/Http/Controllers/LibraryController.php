@@ -8,13 +8,14 @@ use Illuminate\Http\Request;
 class LibraryController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * isplay a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $libraries = Library::orderBy('created_at', 'DESC')->get();
+        return view('admin/libraries', compact('libraries'));
     }
 
     /**
@@ -35,7 +36,48 @@ class LibraryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = request()->validate(
+            [
+                'title' => 'required',
+                'author' => 'required',
+                'description' => 'required',
+                'img' => 'required|image',
+                'link' => '',
+                'file' => '',
+
+            ]
+        );
+
+        $library = new Library();
+
+        $library->title = $data['title'];
+        $library->author = $data['author'];
+        $library->description = $data['description'];
+        $library->link = $data['link'];
+
+
+        if (request('img')) {
+            $inputs['img'] = request('img')->store('uploads', 'public');
+            $library->img = $inputs['img'];
+        } else {
+            $library->img = "null";
+        }
+
+        if (request('file')) {
+            $inputs['file'] = request('file')->store('uploads', 'public');
+            $library->file = $inputs['file'];
+        } else {
+            $library->file = "null";
+        }
+
+        if ($library->isDirty('title')) {
+            session()->flash('library-add', 'Library added: ' . request('title'));
+            $library->save();
+        } else {
+            session()->flash('library-add', 'Nothing to add: ' . request('title'));
+        }
+
+        return redirect('/admin/libraries');
     }
 
     /**
@@ -57,7 +99,8 @@ class LibraryController extends Controller
      */
     public function edit(Library $library)
     {
-        //
+        $libraries = Library::orderBy('created_at', 'DESC')->get();
+        return view('/admin/libraries', compact('libraries', 'library'));
     }
 
     /**
@@ -69,7 +112,43 @@ class LibraryController extends Controller
      */
     public function update(Request $request, Library $library)
     {
-        //
+        $data = request()->validate(
+            [
+                'title' => 'required',
+                'author' => 'required',
+                'description' => 'required',
+                'img' => 'image',
+                'link' => '',
+                'file' => '',
+
+            ]
+        );
+
+
+        $library->title = $data['title'];
+        $library->author = $data['author'];
+        $library->description = $data['description'];
+        $library->link = $data['link'];
+
+
+        if (request('img')) {
+            $inputs['img'] = request('img')->store('uploads', 'public');
+            $library->img = $inputs['img'];
+        } else {
+            $library->img = "null";
+        }
+
+        if (request('file')) {
+            $inputs['file'] = request('file')->store('uploads', 'public');
+            $library->file = $inputs['file'];
+        } else {
+            $library->file = "null";
+        }
+
+        session()->flash('library-add', 'Blog updated: ' . request('title'));
+
+        $library->save();
+        return redirect('/admin/libraries');
     }
 
     /**
@@ -80,6 +159,8 @@ class LibraryController extends Controller
      */
     public function destroy(Library $library)
     {
-        //
+        $library->delete();
+        session()->flash('library-deleted', 'Library deleted: ' . $library->title);
+        return back();
     }
 }

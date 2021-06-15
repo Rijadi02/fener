@@ -81,9 +81,13 @@
                             <div class="sidenav-menu-heading">Nav</div>
 
 
-                            <a class="nav-link" href="{{route('blogs.index')}}">
+                            <a class="nav-link" href="{{route('admin.blogs.index')}}">
                                 <div class="nav-link-icon"><i class="fas fa-chart-line"></i></div>
                                 Blogs
+                            </a>
+                            <a class="nav-link" href="{{route('admin.libraries.index')}}">
+                                <div class="nav-link-icon"><i class="fas fa-chart-line"></i></div>
+                                Libraries
                             </a>
 
 

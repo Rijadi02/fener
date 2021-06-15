@@ -24,8 +24,7 @@
 
                 <div class="col-lg-12">
                 <label for="content" class="col-md-12 col-form-label">Add content</label>
-                <label for="content" class="col-md-12 col-form-label">Add content</label>
-                <input id="content" type="text" name="content" class="form-control @error("content") is-invalid @enderror" value="{{ old("content") ?? $blog->content }}" autocomplete="content">
+                <textarea  id="content" name="content" class="form-control @error("content") is-invalid @enderror">{{ old("content") ?? $blog->content }}</textarea>
                 @error("content")
                 <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -63,7 +62,7 @@
 
                 <div class="col-lg-12">
                 <label for="content" class="col-md-12 col-form-label">Add content</label>
-                <input id="content" type="text" name="content" class="form-control @error("content") is-invalid @enderror" value="{{ old("content") }}" autocomplete="content">
+                <textarea  id="content" name="content" class="form-control @error("content") is-invalid @enderror">{{ old("content")  }}</textarea>
                 @error("content")
                 <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -151,6 +150,10 @@
 </div>
 </div>
 </div>
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script>
+CKEDITOR.replace('content');
+</script>
     @endsection
 
 </x-admin-master>

@@ -118,7 +118,7 @@ class BlogController extends Controller
             $blog->img = "null";
         }
 
-        session()->flash('blog-add', 'Blog added: ' . request('title'));
+        session()->flash('blog-add', 'Blog updated: ' . request('title'));
         $blog->save();
         return redirect('/admin/blogs');
     }
