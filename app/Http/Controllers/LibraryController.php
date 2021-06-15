@@ -134,15 +134,11 @@ class LibraryController extends Controller
         if (request('img')) {
             $inputs['img'] = request('img')->store('uploads', 'public');
             $library->img = $inputs['img'];
-        } else {
-            $library->img = "null";
         }
 
         if (request('file')) {
             $inputs['file'] = request('file')->store('uploads', 'public');
             $library->file = $inputs['file'];
-        } else {
-            $library->file = "null";
         }
 
         session()->flash('library-add', 'Blog updated: ' . request('title'));

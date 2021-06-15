@@ -114,8 +114,6 @@ class BlogController extends Controller
         if (request('img')) {
             $inputs['img'] = request('img')->store('uploads', 'public');
             $blog->img = $inputs['img'];
-        } else {
-            $blog->img = "null";
         }
 
         session()->flash('blog-add', 'Blog updated: ' . request('title'));

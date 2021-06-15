@@ -89,6 +89,10 @@
                                 <div class="nav-link-icon"><i class="fas fa-chart-line"></i></div>
                                 Libraries
                             </a>
+                            <a class="nav-link" href="{{route('admin.galleries.index')}}">
+                                <div class="nav-link-icon"><i class="fas fa-chart-line"></i></div>
+                                Gallery
+                            </a>
 
 
                             {{-- <a class="nav-link" href="{{route('article.index')}}">

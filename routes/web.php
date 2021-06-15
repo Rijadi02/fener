@@ -37,4 +37,11 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::patch('/libraries/{library}/update', [App\Http\Controllers\LibraryController::class, 'update'])->name('admin.libraries.update');
     Route::delete('/libraries/{library}/delete', [App\Http\Controllers\LibraryController::class, 'destroy'])->name('admin.libraries.destroy');
 
+    Route::get('/galleries', [App\Http\Controllers\GalleryController::class, 'index'])->name('admin.galleries.index');
+    Route::post('/galleries/store', [App\Http\Controllers\GalleryController::class, 'store'])->name('admin.galleries.store');
+    Route::get('/galleries/{gallery}/edit', [App\Http\Controllers\GalleryController::class, 'edit'])->name('admin.galleries.edit');
+    Route::patch('/galleries/{gallery}/update', [App\Http\Controllers\GalleryController::class, 'update'])->name('admin.galleries.update');
+    Route::delete('/galleries/{gallery}/delete', [App\Http\Controllers\GalleryController::class, 'destroy'])->name('admin.galleries.destroy');
+
+
 });

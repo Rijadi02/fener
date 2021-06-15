@@ -14,7 +14,8 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        //
+        $galleries = Gallery::orderBy('created_at', 'DESC')->get();
+        return view('admin/galleries', compact('galleries'));
     }
 
     /**
@@ -35,7 +36,32 @@ class GalleryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = request()->validate(
+            [
+                'title' => 'required',
+                'img' => 'required|image',
+            ]
+        );
+
+        $gallery = new Gallery();
+
+        $gallery->title = $data['title'];
+
+        if (request('img')) {
+            $inputs['img'] = request('img')->store('uploads', 'public');
+            $gallery->img = $inputs['img'];
+        } else {
+            $gallery->img = "null";
+        }
+
+        if ($gallery->isDirty('title')) {
+            session()->flash('gallery-add', 'Gallery added: ' . request('title'));
+            $gallery->save();
+        } else {
+            session()->flash('gallery-add', 'Nothing to add: ' . request('title'));
+        }
+
+        return redirect('/admin/galleries');
     }
 
     /**
@@ -57,7 +83,8 @@ class GalleryController extends Controller
      */
     public function edit(Gallery $gallery)
     {
-        //
+        $galleries = Gallery::orderBy('created_at', 'DESC')->get();
+        return view('/admin/galleries', compact('galleries', 'gallery'));
     }
 
     /**
@@ -69,7 +96,27 @@ class GalleryController extends Controller
      */
     public function update(Request $request, Gallery $gallery)
     {
-        //
+        $data = request()->validate(
+            [
+                'title' => 'required',
+
+                'img' => 'image',
+            ]
+        );
+
+
+
+        $gallery->title = $data['title'];
+
+
+        if (request('img')) {
+            $inputs['img'] = request('img')->store('uploads', 'public');
+            $gallery->img = $inputs['img'];
+        }
+
+        session()->flash('gallery-add', 'Gallery updated: ' . request('title'));
+        $gallery->save();
+        return redirect('/admin/galleries');
     }
 
     /**
@@ -80,6 +127,8 @@ class GalleryController extends Controller
      */
     public function destroy(Gallery $gallery)
     {
-        //
+        $gallery->delete();
+        session()->flash('gallery-deleted', 'Gallery deleted: ' . $gallery->title);
+        return back();
     }
 }
