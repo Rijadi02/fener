@@ -25,5 +25,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
-    Route::get('/blogs', [App\Http\Controllers\BlogController::class, 'index'])->name('fener.blogs');
+    Route::get('/blogs', [App\Http\Controllers\BlogController::class, 'index'])->name('admin.blogs.index');
+    Route::post('/blogs/store', [App\Http\Controllers\BlogController::class, 'store'])->name('admin.blogs.store');
+    Route::get('/blogs/{blog}/edit', [App\Http\Controllers\BlogController::class, 'edit'])->name('admin.blogs.edit');
+    Route::patch('/blogs/{blog}/update', [App\Http\Controllers\BlogController::class, 'update'])->name('admin.blogs.update');
+    Route::delete('/blogs/{blog}/delete', [App\Http\Controllers\BlogController::class, 'destroy'])->name('admin.blogs.destroy');
+
 });

@@ -14,7 +14,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::all();
+        $blogs = Blog::orderBy('created_at', 'DESC')->get();
         return view('admin/blogs', compact('blogs'));
     }
 
@@ -25,7 +25,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -36,7 +36,34 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = request()->validate(
+            [
+                'title' => 'required',
+                'content' => 'required',
+                'img' => 'required|image',
+            ]
+        );
+
+        $blog = new Blog();
+
+        $blog->title = $data['title'];
+        $blog->content = $data['content'];
+
+        if (request('img')) {
+            $inputs['img'] = request('img')->store('uploads', 'public');
+            $blog->img = $inputs['img'];
+        } else {
+            $blog->img = "null";
+        }
+
+        if ($blog->isDirty('title')) {
+            session()->flash('blog-add', 'Blog added: ' . request('title'));
+            $blog->save();
+        } else {
+            session()->flash('blog-add', 'Nothing to add: ' . request('title'));
+        }
+
+        return redirect('/admin/blogs');
     }
 
     /**
@@ -58,7 +85,8 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        //
+        $blogs = Blog::orderBy('created_at', 'DESC')->get();
+        return view('/admin/blogs', compact('blogs', 'blog'));
     }
 
     /**
@@ -70,7 +98,29 @@ class BlogController extends Controller
      */
     public function update(Request $request, Blog $blog)
     {
-        //
+        $data = request()->validate(
+            [
+                'title' => 'required',
+                'content' => 'required',
+                'img' => 'image',
+            ]
+        );
+
+
+
+        $blog->title = $data['title'];
+        $blog->content = $data['content'];
+
+        if (request('img')) {
+            $inputs['img'] = request('img')->store('uploads', 'public');
+            $blog->img = $inputs['img'];
+        } else {
+            $blog->img = "null";
+        }
+
+        session()->flash('blog-add', 'Blog added: ' . request('title'));
+        $blog->save();
+        return redirect('/admin/blogs');
     }
 
     /**
@@ -81,6 +131,8 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
-        //
+        $blog->delete();
+        session()->flash('blog-deleted', 'Blog deleted: ' . $blog->title);
+        return back();
     }
 }

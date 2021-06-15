@@ -17,7 +17,7 @@ class CreateLibraryTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('author')->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
             $table->string('img');
             $table->string('link')->nullable();
             $table->string('file')->nullable();

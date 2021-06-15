@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{{config('app.name', 'Fener') }}</title>
+        <title>{{config('app.name', 'Checkos') }}</title>
         <link href="{{asset('css/styles.css')}}" rel="stylesheet" />
 
 
@@ -20,7 +20,7 @@
     </head>
     <body class="nav-fixed">
         <nav class="topnav navbar navbar-expand shadow navbar-light bg-white" id="sidenavAccordion">
-            <a class="navbar-brand" href="index.html">Fener Panel</a>
+            <a class="navbar-brand" href="index.html">Checkos Panel</a>
             <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 mr-lg-2" id="sidebarToggle" href="#"><i data-feather="menu"></i></button>
             {{-- <form class="form-inline mr-auto d-none d-md-block">
                 <div class="input-group input-group-joined input-group-solid">
@@ -52,8 +52,8 @@
                         <h6 class="dropdown-header d-flex align-items-center">
                             <img class="dropdown-user-img" src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" />
                             <div class="dropdown-user-details">
-                                {{-- <div class="dropdown-user-details-name"><a href="#">{{ Auth::user()->name }}</a></div> --}}
-                                {{-- <div class="dropdown-user-details-email">{{ Auth::user()->email }}</div> --}}
+                                {{-- <div class="dropdown-user-details-name"><a href="#">{{ Auth::user()->name }}</a></div>
+                                <div class="dropdown-user-details-email">{{ Auth::user()->email }}</div> --}}
                             </div>
                         </h6>
                         <div class="dropdown-divider"></div>
@@ -81,33 +81,33 @@
                             <div class="sidenav-menu-heading">Nav</div>
 
 
-                            <a class="nav-link" href="users.dashboard')}}">
+                            <a class="nav-link" href="{{route('blogs.index')}}">
                                 <div class="nav-link-icon"><i class="fas fa-chart-line"></i></div>
-                                Dashboard
+                                Blogs
                             </a>
 
 
-                            <a class="nav-link" href="article.index">
+                            {{-- <a class="nav-link" href="{{route('article.index')}}">
                                 <div class="nav-link-icon"><i class="fas fa-newspaper"></i></div>
                                 Articles
                             </a>
 
-                            <a class="nav-link" href="category.index">
+                            <a class="nav-link" href="{{route('category.index')}}">
                                 <div class="nav-link-icon"><i class="fas fa-list"></i></div>
                                 Categories
                             </a>
-                            <a class="nav-link" href="badge.index">
+                            <a class="nav-link" href="{{route('badge.index')}}">
                                 <div class="nav-link-icon"><i class="fas fa-medal"></i></div>
                                 Badges
                             </a>
-                            <a class="nav-link" href="info.index">
+                            <a class="nav-link" href="{{route('info.index')}}">
                                 <div class="nav-link-icon"><i class="fas fa-info-circle"></i></div>
                                 Info
                             </a>
-                            <a class="nav-link" href="users.index">
+                            <a class="nav-link" href="{{route('users.index')}}">
                                 <div class="nav-link-icon"><i class="fas fa-users"></i></div>
                                 Users
-                            </a>
+                            </a> --}}
 
                             {{-- <a class="nav-link" href="{{route('branch.index')}}">
                                 <div class="nav-link-icon"><i class="fas fa-map-marked-alt"></i></div>
@@ -172,8 +172,28 @@
                 </nav>
             </div>
 
+            <div id="layoutSidenav_content">
+
                 @yield('content')
+
+
+                <footer class="footer mt-auto footer-light">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 small">Copyright &copy; <a href="http://tachyondev.tech/"> Tachyon Dev </a> <?php echo date('Y'); ?></div>
+                            <div class="col-md-6 text-md-right small">
+                                <a href="#!">Privacy Policy</a>
+                                &middot;
+                                <a href="#!">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
             </div>
+
+
+        </div>
         <script src="https://cdn.ckeditor.com/ckeditor5/22.0.0/classic/ckeditor.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
@@ -183,7 +203,7 @@
         <script src="{{asset('assets/demo/chart-bar-demo.js')}}"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-        <script src="{{asset('assets/demo/datatables-demo.js')}}"></script>
+        <script src="assets/demo/datatables-demo.js')}}"></script>
         <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" crossorigin="anonymous"></script>
         <script src="{{asset('assets/demo/date-range-picker-demo.js')}}"></script>
