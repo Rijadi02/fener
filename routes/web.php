@@ -23,6 +23,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
+Route::get('/test', [App\Http\Controllers\BlogController::class, 'test'])->name('test.index');
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/blogs', [App\Http\Controllers\BlogController::class, 'index'])->name('admin.blogs.index');
@@ -42,6 +43,4 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/galleries/{gallery}/edit', [App\Http\Controllers\GalleryController::class, 'edit'])->name('admin.galleries.edit');
     Route::patch('/galleries/{gallery}/update', [App\Http\Controllers\GalleryController::class, 'update'])->name('admin.galleries.update');
     Route::delete('/galleries/{gallery}/delete', [App\Http\Controllers\GalleryController::class, 'destroy'])->name('admin.galleries.destroy');
-
-
 });
