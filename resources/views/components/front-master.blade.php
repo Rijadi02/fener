@@ -34,8 +34,8 @@
 
 
         {{-- Header Start --}}
-        <header class="site-header site-header--menu-right dynamic-sticky-bg mt-3 mt-lg-0 dark-mode-texts site-header--absolute site-header--sticky">
-            <div class="container">
+        <header class="site-header site-header--menu-left dynamic-sticky-bg px-3 site-header--absolute site-header--sticky">
+            <div class="container-fluid">
               <nav class="navbar site-navbar">
                 <!-- Brand Logo-->
                 <div class="brand-logo">
@@ -43,10 +43,10 @@
                     <!-- light version logo (logo must be black)-->
                     <img src="{{asset('front/image/png/logo-dark.png')}}" alt="" class="light-version-logo">
                     <!-- Dark version logo (logo must be White)-->
-                    <img src="{{asset('front/image/png/logo-white.png')}}" alt="" class="dark-version-logo">
+                    <img src="{{asset('image/png/logo-white.png')}}" alt="" class="dark-version-logo">
                   </a>
                 </div>
-                <div class="menu-block-wrapper  ms-4">
+                <div class="menu-block-wrapper  ms-lg-7">
                   <div class="menu-overlay"></div>
                   <nav class="menu-block" id="append-menu-header">
                     <div class="mobile-menu-head">
@@ -192,7 +192,7 @@
                       <li class="nav-item nav-item-has-children has-megamenu">
                         <a href="#" class="nav-link-item drop-trigger">Portfolios <i class="fas fa-angle-down"></i>
                         </a>
-                        <div class="sub-menu megamenu megadropdown-left  d-lg-flex" id="submenu-100">
+                        <div class="sub-menu megamenu  megadropdown-center  d-lg-flex" id="submenu-100">
                           <ul class="col-lg-12 row-lg list-unstyled py-lg-2">
                             <li class="col-lg-3">
                               <div class="single-dropdown-block">
@@ -268,9 +268,12 @@
                     </ul>
                   </nav>
                 </div>
-                <div class="header-btn ">
-                  <a class="btn btn btn-egg-blue btn--btn-header-7 rounded-50 text-white shadow--egg-blue-2 ms-lg-4 ms-auto d-none d-sm-flex" href="#">
-                    Free SEO Analysis
+                <div class="header-btns  ms-auto ms-lg-0 d-none d-sm-flex align-items-center">
+                  <a class="btn-link heading-default-color-2 me-4" href="#">
+                    Login
+                  </a>
+                  <a class="btn btn-header-btns btn-link-water btn--medium-2 h-45 text-shark rounded-5 ms-1" href="#">
+                    Get Started
                   </a>
                 </div>
                 <!-- mobile menu trigger -->
