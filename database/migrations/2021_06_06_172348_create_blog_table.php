@@ -17,10 +17,8 @@ class CreateBlogTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('img');
-            $table->longText
-            ('content');
+            $table->longText('content');
             $table->timestamps();
-
         });
     }
 
