@@ -18,11 +18,7 @@ class BlogController extends Controller
         return view('admin/blogs', compact('blogs'));
     }
 
-    public function test()
-    {
-        return view('front/test');
-    }
-
+   
 
     /**
      * Show the form for creating a new resource.

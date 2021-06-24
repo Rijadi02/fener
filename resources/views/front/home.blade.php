@@ -62,6 +62,85 @@
         </div>
       </div>
 
+
+      <div class="portfolio-area portfolio-area--l7 bg-default overflow-hidden">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-xl-7 col-lg-5 col-md-8 col-xs-9">
+              <!-- Section Title -->
+              <div class="section-title section-title--l7 text-center text-lg-start">
+                <h6 class="section-title__sub-heading text-readical-red" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Portfolio</h6>
+                <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">Works we are proud of</h2>
+              </div>
+              <!--/ .Section Title -->
+            </div>
+            <div class="col-xl-5 col-lg-7 col-md-8">
+              {{-- <div class="portfolio-menu text-center text-lg-end mb-5 mb-lg-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+                <button class="button is-checked" data-filter="*">All Work</button>
+                <button class="button" data-filter=".customer-support">Design</button>
+                <button class="button" data-filter=".marketing">Development</button>
+                <button class="button" data-filter=".design">Marketing</button>
+                <button class="button" data-filter=".development">SEO</button>
+              </div> --}}
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-xs-10">
+              <div class="grid grid--l6 position-relative">
+                <div class="grid-item grid--l6__single customer-support marketing">
+                  <a href="/portfolio-details-3.html" class="portfolio__single">
+                    <img class="w-100" src="{{asset('front/image/home-6/portfolio-img-1.png')}}" alt="">
+                    <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                      <div class="hover-content">
+                        <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
+                        <p class="portfolio__hover__text">UX and UI, Design, Development</p>
+                      </div>
+                      <div class="hover-right">
+                        <div class="portfolio__hover__link text-white">
+                          <i class="fas fa-external-link-square-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item grid--l6__single marketing design">
+                  <a href="/portfolio-details-3.html" class="portfolio__single">
+                    <img class="w-100" src="{{asset('front/image/home-6/portfolio-img-2.png')}}" alt="">
+                    <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                      <div class="hover-content">
+                        <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
+                        <p class="portfolio__hover__text">UX and UI, Design, Development</p>
+                      </div>
+                      <div class="hover-right">
+                        <div class="portfolio__hover__link text-white">
+                          <i class="fas fa-external-link-square-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item grid--l6__single customer-support development">
+                  <a href="/portfolio-details-3.html" class="portfolio__single">
+                    <img class="w-100" src="{{asset('front/image/png/portfolio-img-1.png')}}" alt="">
+                    <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
+                      <div class="hover-content">
+                        <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
+                        <p class="portfolio__hover__text">UX and UI, Design, Development</p>
+                      </div>
+                      <div class="hover-right">
+                        <div class="portfolio__hover__link text-white">
+                          <i class="fas fa-external-link-square-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="service-area service-area--l1 border-top border-default-color-2 bg-default">
         <div class="service-shape service-shape--l1">
           <img class="w-100" src="{{asset('front/image/home-1/services-shape-l1.png')}}" alt="">
@@ -371,6 +450,326 @@
         </div>
       </div>
 
+
+      {{-- this doesnt work --}}
+      {{-- <div class="testimonial-section testimonial-section--l8 bg-default-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-xl-9 col-xxl-7">
+              <div class="section-title section-title--l8 text-center text-lg-start">
+                <h6 class="section-title__sub-heading text-bittersweet" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Testimonial</h6>
+                <h2 class="section-title__heading mb-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">Don’t Just Take Our Words For It</h2>
+              </div>
+            </div>
+            <div class="col-xxl-5 col-xl-3 col-lg-4 text-center text-lg-end ">
+              <div class="testimonial-btn mb-6 mb-lg-0"></div>
+            </div>
+          </div>
+          <div class="row justify-content-center testimonial-slider--l8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
+            <div class="col-lg-4 col-md-12">
+              <div class="card card-testimonial--l4">
+                <div class="card-body ">
+                  <div class="card-body__top d-flex align-items-center justify-content-between">
+                    <div class="d-flex flex-wrap align-items-center">
+                      <div class="card-image">
+                        <img src="{{asset('front/image/home-4/user-img-1.png')}}" alt="">
+                      </div>
+                      <div class="card-body__user mr-3">
+                        <h3 class="card-title">Charles Patterson</h3>
+                        <p class="card-text--ext">One year with us</p>
+                      </div>
+                    </div>
+                    <div class="card-icon">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                  <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="card card-testimonial--l4">
+                <div class="card-body ">
+                  <div class="card-body__top d-flex align-items-center justify-content-between">
+                    <div class="d-flex flex-wrap align-items-center">
+                      <div class="card-image">
+                        <img src="{{asset('image/home-3/user-circle-1.png')}}" alt="">
+                      </div>
+                      <div class="card-body__user mr-3">
+                        <h3 class="card-title">John Doe</h3>
+                        <p class="card-text--ext">One year with us</p>
+                      </div>
+                    </div>
+                    <div class="card-icon">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                  <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="card card-testimonial--l4">
+                <div class="card-body ">
+                  <div class="card-body__top d-flex align-items-center justify-content-between">
+                    <div class="d-flex flex-wrap align-items-center">
+                      <div class="card-image">
+                        <img src="{{asset('image/home-3/user-circle-2.png')}}" alt="">
+                      </div>
+                      <div class="card-body__user mr-3">
+                        <h3 class="card-title">Tiana Dokidis</h3>
+                        <p class="card-text--ext">One year with us</p>
+                      </div>
+                    </div>
+                    <div class="card-icon">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                  <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="card card-testimonial--l4">
+                <div class="card-body ">
+                  <div class="card-body__top d-flex align-items-center justify-content-between">
+                    <div class="d-flex flex-wrap align-items-center">
+                      <div class="card-image">
+                        <img src="{{asset('front/image/home-3/user-circle-3.png')}}" alt="">
+                      </div>
+                      <div class="card-body__user mr-3">
+                        <h3 class="card-title">Tiana Dokidis</h3>
+                        <p class="card-text--ext">One year with us</p>
+                      </div>
+                    </div>
+                    <div class="card-icon">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                  <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="card card-testimonial--l4">
+                <div class="card-body ">
+                  <div class="card-body__top d-flex align-items-center justify-content-between">
+                    <div class="d-flex flex-wrap align-items-center">
+                      <div class="card-image">
+                        <img src="{{asset('front/image/home-3/user-circle-1.png')}}" alt="">
+                      </div>
+                      <div class="card-body__user mr-3">
+                        <h3 class="card-title">Talan Bergson</h3>
+                        <p class="card-text--ext">CEO, Greener</p>
+                      </div>
+                    </div>
+                    <div class="card-icon">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                  <p class="card-description">consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.</p>
+                </div>
+              </div>b
+            </div>
+          </div>
+        </div>
+      </div> --}}
+
+
+      {{-- <div class="counter-section bg-default">
+        <div class="container">
+          <div class="counter-widgets-wrapper border-top border-default-color-2">
+            <div class="row justify-content-center">
+              <div class="col-6 col-lg-3 col-md-4 col-xs-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                <div class="widget widget--counter">
+                  <h3 class="text-blue-ribbon widget--counter__title"><span class="counter">15</span>M</h3>
+                  <p class="widget--counter__text">New visitors<br class="d-none d-xs-block"> every month.</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 col-md-4 col-xs-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true">
+                <div class="widget widget--counter">
+                  <h3 class="text-primary widget--counter__title"><span class="counter">49</span>%</h3>
+                  <p class="widget--counter__text">Extra conversion<br class="d-none d-xs-block"> on any niche.</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 col-md-4 col-xs-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" data-aos-once="true">
+                <div class="widget widget--counter">
+                  <h3 class="text-green-2 widget--counter__title">$<span class="counter">2</span>M</h3>
+                  <p class="widget--counter__text">Extra saved by<br class="d-none d-xs-block"> customers.</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 col-md-4 col-xs-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
+                <div class="widget widget--counter">
+                  <h3 class="text-tree-poppy widget--counter__title"><span class="counter">93</span>%</h3>
+                  <p class="widget--counter__text">Success rate on<br class="d-none d-xs-block"> last 05 years.</P>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> --}}
+
+      <div class="cta-section cta-section--l1 bg-purple-heart dark-mode-texts">
+        <div class="footer__shape-1">
+          <img class="w-100" src="{{asset('front/image/home-1/footer-shape.png')}}" alt="">
+        </div>
+        <div class="container">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="300" data-aos-once="true">
+            <div class="col-lg-7 col-md-8">
+              <div class="section-title text-center">
+                <h2 class="section-title__heading">It’s easy to get <br class="d-none d-xs-block"> started.
+                  Start now.</h2>
+                <!-- Newsletter -->
+                <div class="newsletter-form  mx-auto newsletter--l1-2">
+                  <form action="/.">
+                    <div class="d-flex align-items-center justify-content-center flex-column flex-xs-row">
+                      <input class="form-control " type="email" placeholder="Enter your email" required>
+                      <button class=" btn btn--lg btn-primary text-white h-70" type="submit">Start For Free</button>
+                    </div>
+                  </form>
+                </div>
+                <!--/ .Newsletter -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-area--l1  bg-purple-heart dark-mode-texts">
+        <div class="container">
+          <div class="footer-area footer-area--l1">
+            <div class="row ">
+              <div class="col-lg-4 col-md-5 col-xs-7">
+                <div class="footer-widgets">
+                  <!-- Brand Logo-->
+                  <div class="brand-logo mt-1 mb-8">
+                    <a href="#">
+                      <!-- light version logo (logo must be black)-->
+                      <img src="{{asset('front/image/png/logo-dark.png')}}" alt="" class="light-version-logo">
+                      <!-- Dark version logo (logo must be White)-->
+                      <img src="{{asset('front/image/png/logo-white.png')}}" alt="" class="dark-version-logo">
+                    </a>
+                  </div>
+                  <p class="footer-widgets__text">The best
+                    medicines & biggest<br class="d-none d-xs-block"> brands within 30 minutes at your<br
+                      class="d-none d-xs-block"> home. Experience the power of<br class="d-none d-xs-block"> MedCartel
+                    today.</p>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-md-4 col-xs-6">
+                    <div class="footer-widgets">
+                      <h4 class="footer-widgets__title">Company</h4>
+                      <ul class="footer-widgets__list">
+                        <li>
+                          <a href="#">About
+                            us</a>
+                        </li>
+                        <li>
+                          <a href="#">Privacy
+                            Policy</a>
+                        </li>
+                        <li>
+                          <a href="#">Terms &
+                            Conditions</a>
+                        </li>
+                        <li>
+                          <a href="#">Rider</a>
+                        </li>
+                        <li>
+                          <a href="#">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-6">
+                    <div class="footer-widgets">
+                      <h4 class="footer-widgets__title">More Links</h4>
+                      <ul class="footer-widgets__list">
+                        <li>
+                          <a href="#">About
+                            us</a>
+                        </li>
+                        <li>
+                          <a href="#">Privacy
+                            Policy</a>
+                        </li>
+                        <li>
+                          <a href="#">Terms &
+                            Conditions</a>
+                        </li>
+                        <li>
+                          <a href="#">Rider</a>
+                        </li>
+                        <li>
+                          <a href="#">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-7">
+                    <div class="footer-widgets footer-widgets--1">
+                      <h4 class="footer-widgets__title">Contact Details</h4>
+                      <ul class="footer-widgets__list footer-widgets--address">
+                        <li>
+                          <i class="fa fa-map-marker-alt"></i>
+                          <span>Amsterdam <br class="d-block">
+                            Netherlands</span>
+                        </li>
+                        <li>
+                          <i class="fa fa-phone-alt"></i>
+                          <div class="list-content">
+                            <a href="#">+31 62 19
+                              22 705</a>
+                            <span> 7 Days - 8am
+                              - 10pm </span>
+                          </div>
+                        </li>
+                        <li>
+                          <i class="fa fa-envelope"></i>
+                          <a href="mailto:info@medcartel.com">info@medcartel.com</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright footer-copyright--l1">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-7">
+                <div class="copyright text-center text-md-start">
+                  <p class="copyright__text">© 2021 UX Theme, All Rights Reserved</p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="footer-social-share dot-right footer-social-share--1">
+                  <ul class="list-unstyled d-flex align-items-center justify-content-center justify-content-md-end">
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
     <script src="{{asset('front/plugins/type-js/typed.min.js')}}"></script>
     <script>
       var typed = new Typed('.highlight-text', {
@@ -383,6 +782,8 @@
         loop: true
       });
     </script>
+
+
     @endsection
 
 
