@@ -8790,7 +8790,7 @@ ________________________________ */
 }
 
 /*
-  Home 1 : Testimonial 
+  Home 1 : Testimonial
 ---------------------------------*/
 .testimonial-area {
   padding-top: 50px;
@@ -8825,7 +8825,7 @@ ________________________________ */
 }
 
 /*
-  Home 3 : Testimonial 
+  Home 3 : Testimonial
 ---------------------------------*/
 .testimonial-section--l3 {
   border-bottom: 1px solid rgba(38, 39, 41, 0.1);
@@ -8864,7 +8864,7 @@ ________________________________ */
 }
 
 /*
-  Home 4 : Testimonial 
+  Home 4 : Testimonial
 ---------------------------------*/
 .testimonial-section--l4,
 .testimonial-section--l6,
@@ -8963,7 +8963,7 @@ ________________________________ */
 }
 
 /*
-  Home 5 : Testimonial 
+  Home 5 : Testimonial
 ---------------------------------*/
 .testimonial-section--l5 {
   border-bottom: 1px solid rgba(38, 39, 41, 0.1);
@@ -9009,7 +9009,7 @@ ________________________________ */
 }
 
 /*
-  Home 5 : Testimonial 
+  Home 5 : Testimonial
 ---------------------------------*/
 .testimonial-section--l7,
 .testimonial-section--inner-about-us {
@@ -9166,7 +9166,7 @@ ________________________________ */
 }
 
 /*
-  Home 8 : Testimonial 
+  Home 8 : Testimonial
 ---------------------------------*/
 @media (min-width: 992px) {
   .testimonial-btn {
@@ -9201,7 +9201,7 @@ ________________________________ */
 }
 
 /*
-  Innerpage : Testimonial -1  
+  Innerpage : Testimonial -1
 ---------------------------------*/
 .testimonial-mobile-slider--inner-1 .card-testimonial--l3 {
   margin-top: 45px;
@@ -9240,7 +9240,7 @@ ________________________________ */
 }
 
 /*
-  Innerpage : Testimonial -2  
+  Innerpage : Testimonial -2
 ---------------------------------*/
 .testimonial-inner-2 .testimonial-btn button {
   color: #5034fc;
@@ -11083,7 +11083,7 @@ ________________________________ */
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 0 20px;
   color: #fff;
   transition: 0.4s;
@@ -14830,7 +14830,7 @@ ________________________________ */
 }
 
 /*
-  Pricing Table 
+  Pricing Table
 ------------------------------*/
 .pricing-table__faqs {
   padding-top: 60px;
@@ -16418,10 +16418,10 @@ ________________________________ */
 }
 
 /* ---------------------------------
--------> THEME CUSTOM STYLES 
+-------> THEME CUSTOM STYLES
 ---------------------------------
 */
-/* Underline animation 
+/* Underline animation
 -----------------------*/
 mark {
   color: inherit;
