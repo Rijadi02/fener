@@ -19,6 +19,11 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/blogs', [App\Http\Controllers\HomeController::class, 'blogs'])->name('blogs');
+Route::get('/blogs/{id}', [App\Http\Controllers\HomeController::class, 'blogs_show'])->name('blogs_show');
+Route::get('/gallery', [App\Http\Controllers\HomeController::class, 'gallery'])->name('gallery');
+
+
 
 
 

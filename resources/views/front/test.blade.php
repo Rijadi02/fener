@@ -32,7 +32,7 @@
             <div class="col-xl-6 d-none d-lg-block col-lg-5 pb-5 col-md-10 order-1 order-lg-2 position-static">
                 <div class="welcome-image-group-wrapper">
 
-                    <object  class="w-100 pb-5" data="{{asset('front/image/svg/hero.svg')}}"></object>
+                    <object  class="w-100 pb-5" data="{{asset('front/image/svg/hero.svg')}}" alt="">
 
 
                 </div>
@@ -42,9 +42,6 @@
           </div>
         </div>
     </div>
-
-
-
 
       <div class="service-area service-area--l1 border-top border-default-color-2 bg-default">
         <div class="service-shape service-shape--l1">
@@ -166,7 +163,117 @@
         </div>
       </div>
     </div>
-
+{{--
+      <div class="feature-section feature-section--l1 bg-blue-ribbon dark-mode-texts">
+        <!-- Section Shape -->
+        <div class="feature-section--l1__shape-group">
+          <img class="w-100" src="{{asset('front/image/home-1/l1-half-circle-shape.png')}}" alt="">
+          <div class="img-1">
+            <img class="w-100" src="{{asset('front/image/home-1/l1-full-circle-shape.png')}}" alt="">
+          </div>
+        </div>
+        <!--/ .Section Shape -->
+        <div class="container">
+          <!-- Section Title -->
+          <div class="row">
+            <div class="col-xl-8 col-lg-10">
+              <div class="section-title" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+                <h2 class="section-title__heading mb-5">Planprogram Modern</h2>
+                <p class="section-title__description mt-8">Create custom landing pages with Fastland
+                  that converts<br class="d-none d-xs-block"> more visitors than any website. Easy & Fast.</p>
+              </div>
+            </div>
+          </div>
+          <!--/ .Section Title -->
+          <div class="feature-area-tab">
+            <div class="row justify-content-center justify-content-md-start">
+              <div class="col-lg-3 col-md-12 col-xs-6 col-8">
+                <div class="nav nav-tab--feature row ms-0 me-0" id="v-pills-tab" role="tablist" aria-orientation="vertical" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                  <a class="widget widget--feature nav-item col-lg-12 col-md-4 col-xs-6 col-8 me-md-3 me-lg-0 active" data-bs-toggle="pill" id="v-pills-home-tab" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <i class="fa fa-chart-pie"></i>
+                    <span class="widget-text">Nahu</span></a>
+                  <a class="widget widget--feature nav-item col-lg-12 col-md-4 col-xs-6 col-8 me-md-3 me-lg-0" data-bs-toggle="pill" id="v-pills-profile-tab" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="">
+                    <i class="fa fa-shapes"></i>
+                    <span class="widget-text">Sarf</span></a>
+                  <a class="widget widget--feature nav-item col-lg-12 col-md-4 col-xs-6 col-8 me-md-3 me-lg-0" data-bs-toggle="pill" id="v-pills-messages-tab" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="">
+                    <i class="fa fa-search"></i>
+                    <span class="widget-text">Beleghah</span></a>
+                </div>
+              </div>
+              <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12">
+                <div class="tab-content tab-content--feature" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div class="row align-items-center">
+                      <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+                        <div class="features-content__item">
+                          <h2 class="features-content__item__count">01.</h2>
+                          <h5 class="features-content__item__heading">Real data access</h5>
+                          <p class="features-content__item__content">Create custom landing pages with<br
+                                                  class="d-none d-md-block"> Fastland that converts more visitors<br
+                                                  class="d-none d-md-block"> than any website.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+                        <div class="features-content__item">
+                          <h2 class="features-content__item__count">02.</h2>
+                          <h5 class="features-content__item__heading">Daily email reports</h5>
+                          <p class="features-content__item__content">Create custom landing pages with<br
+                                                  class="d-none d-md-block"> Fastland that converts more visitors<br
+                                                  class="d-none d-md-block"> than any website.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+                        <div class="features-content__item">
+                          <h2 class="features-content__item__count">03.</h2>
+                          <h5 class="features-content__item__heading">Real data access</h5>
+                          <p class="features-content__item__content">Create custom landing pages with<br
+                                                  class="d-none d-md-block"> Fastland that converts more visitors<br
+                                                  class="d-none d-md-block"> than any website.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+                        <div class="features-content__item">
+                          <h2 class="features-content__item__count">04.</h2>
+                          <h5 class="features-content__item__heading">Daily email reports</h5>
+                          <p class="features-content__item__content">Create custom landing pages with<br
+                                                  class="d-none d-md-block"> Fastland that converts more visitors<br
+                                                  class="d-none d-md-block"> than any website.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+                        <div class="features-content__item">
+                          <h2 class="features-content__item__count">05.</h2>
+                          <h5 class="features-content__item__heading">Real data access</h5>
+                          <p class="features-content__item__content">Create custom landing pages with<br
+                                                  class="d-none d-md-block"> Fastland that converts more visitors<br
+                                                  class="d-none d-md-block"> than any website.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-8 col-xs-9" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+                        <div class="features-content__item">
+                          <h2 class="features-content__item__count">06.</h2>
+                          <h5 class="features-content__item__heading">Daily email reports</h5>
+                          <p class="features-content__item__content">Create custom landing pages with<br
+                                                  class="d-none d-md-block"> Fastland that converts more visitors<br
+                                                  class="d-none d-md-block"> than any website.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> --}}
 
       <div class="content-section content-section--l1-1 bg-default">
         <div class="container">
@@ -529,6 +636,7 @@
       </div> --}}
 
 
+
     <script src="{{asset('front/plugins/type-js/typed.min.js')}}"></script>
     <script>
       var typed = new Typed('.highlight-text', {
@@ -541,8 +649,6 @@
         loop: true
       });
     </script>
-
-
     @endsection
 
 
