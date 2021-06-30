@@ -30,9 +30,9 @@
             <div class="col-md-12 col-xs-10">
               <div class="grid grid--l6 position-relative">
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development customer-support">
+                <div class="grid-item grid--3__single customer-support development customer-support">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-1.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1501525630906-79bad890218a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=348&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -48,9 +48,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development marketing design">
+                <div class="grid-item grid--3__single customer-support development marketing design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-13.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1595131264266-6804a61cb738?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -66,9 +66,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development design">
+                <div class="grid-item grid--3__single customer-support development design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-4.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1601248318145-6de442e45c10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -84,9 +84,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development marketing design">
+                <div class="grid-item grid--3__single customer-support development marketing design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-6.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1604240400568-c50e9a0f518f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -102,9 +102,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development marketing design">
+                <div class="grid-item grid--3__single customer-support development marketing design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-8.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1624795252541-3468ee156d64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -120,9 +120,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development marketing design">
+                <div class="grid-item grid--3__single customer-support development marketing design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-16.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1604608672516-f1b9b1d37076?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=661&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -138,9 +138,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development marketing design">
+                <div class="grid-item grid--3__single customer-support development marketing design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-10.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -156,9 +156,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development design">
+                <div class="grid-item grid--3__single customer-support development design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-3.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1580865166895-33ff0104442b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -174,9 +174,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development marketing design">
+                <div class="grid-item grid--3__single customer-support development marketing design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-11.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1584995907777-633637af2644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>
@@ -192,9 +192,9 @@
                 </div>
                 <!--/ .Single Grid -->
                 <!-- Single Grid -->
-                <div class="grid-item grid--3__single--no-gap no-gap customer-support development marketing design">
+                <div class="grid-item grid--3__single customer-support development marketing design">
                   <a href="/portfolio-details-3.html" class="portfolio__single no-gap">
-                    <img class="w-100" src="{{asset('front/image/portfolio/portfolio-mas-2.jpg')}}" alt="">
+                    <img class="w-100" src="https://images.unsplash.com/photo-1578173305657-7db32a82793e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
                     <div class="portfolio__hover bg-readical-red dark-mode-texts d-xs-flex align-items-center justify-content-between">
                       <div class="hover-content">
                         <h3 class="portfolio__hover__heading">Agency Brand guide & Development</h3>

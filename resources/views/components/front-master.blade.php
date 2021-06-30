@@ -58,19 +58,19 @@
                     </div>
                     <ul class="site-menu-main">
                       <li class="nav-item sub-menu--item nav-item-has-children">
-                        <a href="#" class="nav-link-item ">Shtepia</a>
+                        <a href="{{route('home')}}" class="nav-link-item ">Shtepia</a>
                       </li>
                       <li class="nav-item sub-menu--item nav-item-has-children">
                         <a href="#" class="nav-link-item ">Kurset</a>
                       </li>
                       <li class="nav-item sub-menu--item nav-item-has-children">
-                        <a href="#" class="nav-link-item ">Blogu</a>
+                        <a href="{{route('blogs')}}" class="nav-link-item ">Blogu</a>
                       </li>
                       <li class="nav-item sub-menu--item nav-item-has-children">
-                        <a href="#" class="nav-link-item ">Galeria</a>
+                        <a href="{{route('gallery')}}" class="nav-link-item ">Galeria</a>
                       </li>
                       <li class="nav-item sub-menu--item nav-item-has-children">
-                        <a href="#" class="nav-link-item ">Librat</a>
+                        <a href="{{route('books')}}" class="nav-link-item ">Librat</a>
                       </li>
                       <li class="nav-item sub-menu--item nav-item-has-children">
                         <a href="#" class="nav-link-item ">Rreth Nesh</a>

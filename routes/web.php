@@ -22,6 +22,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/blogs', [App\Http\Controllers\HomeController::class, 'blogs'])->name('blogs');
 Route::get('/blogs/{id}', [App\Http\Controllers\HomeController::class, 'blogs_show'])->name('blogs_show');
 Route::get('/gallery', [App\Http\Controllers\HomeController::class, 'gallery'])->name('gallery');
+Route::get('/books', [App\Http\Controllers\HomeController::class, 'books'])->name('books');
+Route::get('/books/{id}', [App\Http\Controllers\HomeController::class, 'books_show'])->name('books_show');
 
 
 

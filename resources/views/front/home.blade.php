@@ -353,7 +353,7 @@
             </div>
             <div class="col-xl-4 col-lg-9 col-md-7 col-xs-10">
               <div class="blogs-post blogs-post--small">
-                <img class="w-100" style="aspect-ratio: 0.9; object-fit:cover " src="{{asset('front/image/png/blog-post-5.png')}}" alt="">
+                <img class="w-100" src="{{asset('front/image/png/blog-post-5.png')}}" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
                     <a href="/blog-details.html" class="hover-content__badge badge bg-primary">Gadgets</a>

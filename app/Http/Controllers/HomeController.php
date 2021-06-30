@@ -46,4 +46,16 @@ class HomeController extends Controller
         $gallery = Gallery::all();
         return view('front/gallery', compact('gallery'));
     }
+
+    public function books()
+    {
+        // $gallery = Gallery::all();
+        return view('front/books');
+    }
+
+    public function books_show($id)
+    {
+        // $gallery = Gallery::all();
+        return view('front/books_show');
+    }
 }
