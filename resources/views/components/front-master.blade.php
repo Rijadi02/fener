@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Page Title </title>
+    <title> Fener </title>
     <link rel="shortcut icon" href="{{ asset('front/image/png/favicon.png') }}" type="image/x-icon">
     {{-- {{asset('assets/demo/chart-area-demo.js')}} --}}
     <!-- Bootstrap , fonts & icons  -->
@@ -42,11 +42,10 @@
                 <nav class="navbar site-navbar">
                     <!-- Brand Logo-->
                     <div class="brand-logo">
-                        <a href="/home-marketing.html">
-                            <!-- light version logo (logo must be black)-->
-                            <img src="{{ asset('front/image/png/logo-dark.png') }}" alt="" class="light-version-logo">
-                            <!-- Dark version logo (logo must be White)-->
-                            <img src="{{ asset('image/png/logo-white.png') }}" alt="" class="dark-version-logo">
+                        <a href="{{route('home')}}">
+
+                            <img src="{{ asset('front/image/svg/logo.svg') }}" alt="" class="light-version-logo h-100">
+
                         </a>
                     </div>
                     <div class="menu-block-wrapper  ms-lg-7">
@@ -118,11 +117,8 @@
                                 <div class="brand-logo mt-1">
                                     <a href="#">
                                         <!-- light version logo (logo must be black)-->
-                                        <img src="{{ asset('front/image/png/logo-dark.png') }}" alt=""
+                                        <img src="{{ asset('front/image/svg/logo.svg') }}" alt=""
                                             class="light-version-logo">
-                                        <!-- Dark version logo (logo must be White)-->
-                                        <img src="{{ asset('front/image/png/logo-white.png') }}" alt=""
-                                            class="dark-version-logo">
                                     </a>
                                 </div>
                                 <p class="footer-widgets__text mt-5">
