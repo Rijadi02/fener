@@ -3,9 +3,7 @@
     @section('content')
 
     <div class="portfolio-area portfolio-area--inner-1 bg-default-3 border-bottom border-default-color-3">
-        <div class="shape">
-          <img class="w-100" src="{{asset('front/image/png/inner-banner-shape.png')}}" alt="">
-        </div>
+       
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-xl-7 col-lg-5 col-md-8 col-xs-9">

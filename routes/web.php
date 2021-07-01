@@ -19,11 +19,20 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/courses', [App\Http\Controllers\HomeController::class, 'courses'])->name('courses');
+Route::get('/courses/{course}', [App\Http\Controllers\HomeController::class, 'courses_show'])->name('courses_show');
+
 Route::get('/blogs', [App\Http\Controllers\HomeController::class, 'blogs'])->name('blogs');
-Route::get('/blogs/{id}', [App\Http\Controllers\HomeController::class, 'blogs_show'])->name('blogs_show');
+Route::get('/blogs/{blog}', [App\Http\Controllers\HomeController::class, 'blogs_show'])->name('blogs_show');
+
 Route::get('/gallery', [App\Http\Controllers\HomeController::class, 'gallery'])->name('gallery');
+
 Route::get('/books', [App\Http\Controllers\HomeController::class, 'books'])->name('books');
-Route::get('/books/{id}', [App\Http\Controllers\HomeController::class, 'books_show'])->name('books_show');
+Route::get('/books/{book}', [App\Http\Controllers\HomeController::class, 'books_show'])->name('books_show');
+
+Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
+Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 
 
 

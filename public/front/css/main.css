@@ -4290,6 +4290,10 @@ body[data-theme="dark"] .reveal-header .nav-link-item,
     object-fit: cover
 }
 
+.course img{
+    aspect-ratio: 1.4;
+    object-fit: cover
+}
 
 .card--service:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);

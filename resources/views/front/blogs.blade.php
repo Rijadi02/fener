@@ -18,17 +18,17 @@
                 <img class="w-100" src="{{asset('front/image/png/blog-post-1.png')}}" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="/blog-details.html" class="hover-content__badge badge bg-primary">Gadgets</a>
-                    <a href="/blog-details.html" class="hover-content__date">01 June, 2020</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__badge badge bg-primary">Gadgets</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__date">01 June, 2020</a>
                   </div>
-                  <a href="/blog-details.html" class="hover-content__title">We can blend colors multiple ways, the most common</a>
+                  <a href="{{route("blogs_show", 1)}}" class="hover-content__title">We can blend colors multiple ways, the most common</a>
                   <ul class="hover-content__post-meta list-unstyled">
                     <li>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-user"></i>George Lee</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-heart"></i>21K</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-comments"></i>305</a>
                     </li>
                   </ul>
@@ -42,17 +42,17 @@
                 <img class="w-100" src="{{asset('front/image/png/blog-post-2.png')}}" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="/blog-details.html" class="hover-content__badge badge bg-primary">Gadgets</a>
-                    <a href="/blog-details.html" class="hover-content__date">01 June, 2020</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__badge badge bg-primary">Gadgets</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__date">01 June, 2020</a>
                   </div>
-                  <a href="/blog-details.html" class="hover-content__title">We can blend colors multiple ways, the most common</a>
+                  <a href="{{route("blogs_show", 1)}}" class="hover-content__title">We can blend colors multiple ways, the most common</a>
                   <ul class="hover-content__post-meta list-unstyled">
                     <li>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-user"></i>George Lee</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-heart"></i>21K</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-comments"></i>305</a>
                     </li>
                   </ul>
@@ -64,17 +64,17 @@
                 <img class="w-100" src="{{asset('front/image/png/blog-post-3.png')}}" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="/blog-details.html" class="hover-content__badge badge bg-primary">Gadgets</a>
-                    <a href="/blog-details.html" class="hover-content__date">01 June, 2020</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__badge badge bg-primary">Gadgets</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__date">01 June, 2020</a>
                   </div>
-                  <a href="/blog-details.html" class="hover-content__title">We can blend colors multiple ways, the most common</a>
+                  <a href="{{route("blogs_show", 1)}}" class="hover-content__title">We can blend colors multiple ways, the most common</a>
                   <ul class="hover-content__post-meta list-unstyled">
                     <li>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-user"></i>George Lee</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-heart"></i>21K</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-comments"></i>305</a>
                     </li>
                   </ul>
@@ -86,17 +86,17 @@
                 <img class="w-100" src="{{asset('front/image/png/blog-post-4.png')}}" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="/blog-details.html" class="hover-content__badge badge bg-primary">Gadgets</a>
-                    <a href="/blog-details.html" class="hover-content__date">01 June, 2020</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__badge badge bg-primary">Gadgets</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__date">01 June, 2020</a>
                   </div>
-                  <a href="/blog-details.html" class="hover-content__title">We can blend colors multiple ways, the most common</a>
+                  <a href="{{route("blogs_show", 1)}}" class="hover-content__title">We can blend colors multiple ways, the most common</a>
                   <ul class="hover-content__post-meta list-unstyled">
                     <li>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-user"></i>George Lee</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-heart"></i>21K</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-comments"></i>305</a>
                     </li>
                   </ul>
@@ -108,17 +108,17 @@
                 <img class="w-100" src="{{asset('front/image/png/blog-post-5.png')}}" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="/blog-details.html" class="hover-content__badge badge bg-primary">Gadgets</a>
-                    <a href="/blog-details.html" class="hover-content__date">01 June, 2020</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__badge badge bg-primary">Gadgets</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__date">01 June, 2020</a>
                   </div>
-                  <a href="/blog-details.html" class="hover-content__title">We can blend colors multiple ways, the most common</a>
+                  <a href="{{route("blogs_show", 1)}}" class="hover-content__title">We can blend colors multiple ways, the most common</a>
                   <ul class="hover-content__post-meta list-unstyled">
                     <li>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-user"></i>George Lee</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-heart"></i>21K</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-comments"></i>305</a>
                     </li>
                   </ul>
@@ -130,17 +130,17 @@
                 <img class="w-100" src="{{asset('front/image/png/blog-post-6.png')}}" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="/blog-details.html" class="hover-content__badge badge bg-primary">Gadgets</a>
-                    <a href="/blog-details.html" class="hover-content__date">01 June, 2020</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__badge badge bg-primary">Gadgets</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__date">01 June, 2020</a>
                   </div>
-                  <a href="/blog-details.html" class="hover-content__title">We can blend colors multiple ways, the most common</a>
+                  <a href="{{route("blogs_show", 1)}}" class="hover-content__title">We can blend colors multiple ways, the most common</a>
                   <ul class="hover-content__post-meta list-unstyled">
                     <li>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-user"></i>George Lee</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-heart"></i>21K</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-comments"></i>305</a>
                     </li>
                   </ul>
@@ -152,17 +152,17 @@
                 <img class="w-100" src="{{asset('front/image/png/blog-post-7.png')}}" alt="">
                 <div class="hover-content">
                   <div class="hover-content__top d-flex align-items-center dark-mode-texts">
-                    <a href="/blog-details.html" class="hover-content__badge badge bg-primary">Gadgets</a>
-                    <a href="/blog-details.html" class="hover-content__date">01 June, 2020</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__badge badge bg-primary">Gadgets</a>
+                    <a href="{{route("blogs_show", 1)}}" class="hover-content__date">01 June, 2020</a>
                   </div>
-                  <a href="/blog-details.html" class="hover-content__title">We can blend colors multiple ways, the most common</a>
+                  <a href="{{route("blogs_show", 1)}}" class="hover-content__title">We can blend colors multiple ways, the most common</a>
                   <ul class="hover-content__post-meta list-unstyled">
                     <li>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-user"></i>George Lee</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-heart"></i>21K</a>
-                      <a href="/blog-details.html">
+                      <a href="{{route("blogs_show", 1)}}">
                         <i class="fa fa-comments"></i>305</a>
                     </li>
                   </ul>

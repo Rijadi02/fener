@@ -32,8 +32,8 @@
                     <img class="w-100 card" src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/123097592_165554561886964_7430966175158750192_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=kCw2Btmrf7sAX-9xgM2&_nc_ht=scontent-sof1-2.xx&oh=ef1a04c4ee4c70756fc0deea0173a2df&oe=60DFFA42"/>
 
                     <div class="card card--service">
-                        <h2 class="card--service__title">Sëmundja dhe ilaqi</h2>
-                        <p class="card--service__content">Ibn Kajim El-Xheuzije</p>
+                        <h2 class="card--service__title">Mesazh per njerezit</h2>
+                        <p class="card--service__content">Jahja Hondozi</p>
                     </div>
                     </a>
                 </div>
@@ -44,8 +44,8 @@
                     <img class="w-100 card" src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/118205386_142246694217751_3369464652320012652_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rCFgPn7com8AX_ZECbR&tn=8aRpznCqzGng4jAz&_nc_ht=scontent-sof1-2.xx&oh=19f7de628a08525cd33503e16008bdce&oe=60DEAEED"/>
 
                     <div class="card card--service">
-                        <h2 class="card--service__title">Kitab et-teuhid</h2>
-                        <p class="card--service__content">Muhammad ibn Abd al-Wahhab</p>
+                        <h2 class="card--service__title">Qortimi i lakmise per...</h2>
+                        <p class="card--service__content">Ibn Rexhep el-Hanbeli</p>
                     </div>
                     </a>
                 </div>
@@ -56,8 +56,8 @@
                     <img class="w-100 card" src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/118205386_142246694217751_3369464652320012652_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rCFgPn7com8AX_ZECbR&tn=8aRpznCqzGng4jAz&_nc_ht=scontent-sof1-2.xx&oh=19f7de628a08525cd33503e16008bdce&oe=60DEAEED"/>
 
                     <div class="card card--service">
-                        <h2 class="card--service__title">Kitab et-teuhid</h2>
-                        <p class="card--service__content">Muhammad ibn Abd al-Wahhab</p>
+                        <h2 class="card--service__title">Qortimi i lakmise per...</h2>
+                        <p class="card--service__content">Ibn Rexhep el-Hanbeli</p>
                     </div>
                     </a>
                 </div>
@@ -68,8 +68,8 @@
                     <img class="w-100 card" src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/118205386_142246694217751_3369464652320012652_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rCFgPn7com8AX_ZECbR&tn=8aRpznCqzGng4jAz&_nc_ht=scontent-sof1-2.xx&oh=19f7de628a08525cd33503e16008bdce&oe=60DEAEED"/>
 
                     <div class="card card--service">
-                        <h2 class="card--service__title">Kitab et-teuhid</h2>
-                        <p class="card--service__content">Muhammad ibn Abd al-Wahhab</p>
+                        <h2 class="card--service__title">Qortimi i lakmise per...</h2>
+                        <p class="card--service__content">Ibn Rexhep el-Hanbeli</p>
                     </div>
                     </a>
                 </div>
@@ -80,8 +80,8 @@
                     <img class="w-100 card" src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/118205386_142246694217751_3369464652320012652_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rCFgPn7com8AX_ZECbR&tn=8aRpznCqzGng4jAz&_nc_ht=scontent-sof1-2.xx&oh=19f7de628a08525cd33503e16008bdce&oe=60DEAEED"/>
 
                     <div class="card card--service">
-                        <h2 class="card--service__title">Kitab et-teuhid</h2>
-                        <p class="card--service__content">Muhammad ibn Abd al-Wahhab</p>
+                        <h2 class="card--service__title">Qortimi i lakmise per...</h2>
+                        <p class="card--service__content">Ibn Rexhep el-Hanbeli</p>
                     </div>
                     </a>
                 </div>
@@ -92,8 +92,8 @@
                     <img class="w-100 card" src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/118205386_142246694217751_3369464652320012652_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rCFgPn7com8AX_ZECbR&tn=8aRpznCqzGng4jAz&_nc_ht=scontent-sof1-2.xx&oh=19f7de628a08525cd33503e16008bdce&oe=60DEAEED"/>
 
                     <div class="card card--service">
-                        <h2 class="card--service__title">Kitab et-teuhid</h2>
-                        <p class="card--service__content">Muhammad ibn Abd al-Wahhab</p>
+                        <h2 class="card--service__title">Qortimi i lakmise per...</h2>
+                        <p class="card--service__content">Ibn Rexhep el-Hanbeli</p>
                     </div>
                     </a>
                 </div>
@@ -104,8 +104,8 @@
                     <img class="w-100 card" src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/118205386_142246694217751_3369464652320012652_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rCFgPn7com8AX_ZECbR&tn=8aRpznCqzGng4jAz&_nc_ht=scontent-sof1-2.xx&oh=19f7de628a08525cd33503e16008bdce&oe=60DEAEED"/>
 
                     <div class="card card--service">
-                        <h2 class="card--service__title">Kitab et-teuhid</h2>
-                        <p class="card--service__content">Muhammad ibn Abd al-Wahhab</p>
+                        <h2 class="card--service__title">Qortimi i lakmise per...</h2>
+                        <p class="card--service__content">Ibn Rexhep el-Hanbeli</p>
                     </div>
                     </a>
                 </div>
