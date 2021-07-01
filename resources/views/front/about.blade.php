@@ -13,9 +13,7 @@
             </div>
           </div>
         </div>
-        <div class="shape">
-          <img class="w-100" src="{{asset('front/image/png/inner-banner-shape.png')}}" alt="">
-        </div>
+      
       </div>
 
       <div class="content-section content-section--l3-1 bg-default ">
@@ -122,7 +120,7 @@ Për ta realizuar këtë, shkolla Fener ka përgatitur një platformë unike dhe
               <div class="col-xl-6 col-lg-6 col-md-8 col-xs-10">
                 <div class="content-image-group--l2-2">
                   <img class="w-100" src="{{asset('front/image/svg/ayah.svg')}}" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
-                
+
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-8 col-xs-10">

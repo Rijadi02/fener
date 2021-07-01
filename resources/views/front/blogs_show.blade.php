@@ -15,7 +15,7 @@
               </div>
               <div class="blog-content">
                 <div class="blog-content__img">
-                  <img class="w-100" src="{{asset('front/image/png/blog-details-img-1.png')}}" alt="">
+                  <img class="w-100" src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
                 </div>
                 <p class="blog-content__text">Doubling my 9–5 salary several times in my career is something I never thought would happen. My career went from startup land to call center operator in a short space of time.</p>
                 <p class="blog-content__text">That meant going from six-figures down to the minimum wage in my home country of Australia. And to top it off, I have no degrees in anything business related — unless you count a sound engineering qualification.</p>
@@ -178,9 +178,9 @@
                 </div>
                 <!--/ .Single Widgets -->
                 <!-- Single Widgets -->
-                <div class="sidebar__ads">
+                {{-- <div class="sidebar__ads">
                   <a href="#"><img class="w-100" src="{{asset('front/image/png/ads-img.png')}}" alt=""></a>
-                </div>
+                </div> --}}
               </div>
               <!--/ .Single Widgets -->
             </div>
