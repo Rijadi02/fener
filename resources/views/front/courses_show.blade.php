@@ -16,7 +16,7 @@
                         </div>
                         <div class="blog-content">
                             <div class="blog-content__img">
-                                <img class="w-100" src="{{ asset('front/image/png/blog-details-img-1.png') }}" alt="">
+                                <img class="w-100" src="https://images.unsplash.com/photo-1610388549158-cb214541f30c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="">
                             </div>
                             <p class="blog-content__text">Doubling my 9–5 salary several times in my career is something I
                                 never thought would happen. My career went from startup land to call center operator in a

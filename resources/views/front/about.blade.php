@@ -13,9 +13,7 @@
             </div>
           </div>
         </div>
-        <div class="shape">
-          <img class="w-100" src="{{asset('front/image/png/inner-banner-shape.png')}}" alt="">
-        </div>
+      
       </div>
 
       <div class="content-section content-section--l3-1 bg-default ">
@@ -36,7 +34,7 @@ Për ta realizuar këtë, shkolla Fener ka përgatitur një platformë unike dhe
             </div>
             <div class="col-xl-7 col-lg-6 col-md-8 col-xs-10 order-1 order-lg-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="400" data-aos-once="true">
               <div class="content-img content-img--l3-1">
-                <img class="w-100" src="{{asset('front/image/home-3/content-l3-img-1.png')}}" alt="">
+                <img class="w-100" src="{{asset('front/image/svg/focus.svg')}}" alt="">
               </div>
             </div>
           </div>
@@ -89,7 +87,7 @@ Për ta realizuar këtë, shkolla Fener ka përgatitur një platformë unike dhe
                   <div class="section-title section-title--l7">
                     <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">PËRCAKTOJE QART TARGETIN!</h2>
                     <div class="content-img ms-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
-                      <img class="w-100" src="{{asset('front/image/home-6/content-l7-1.png')}}" alt="">
+                      <img class="w-100" src="{{asset('front/image/svg/target.svg')}}" alt="">
                     </div>
                   </div>
                 </div>
@@ -121,10 +119,8 @@ Për ta realizuar këtë, shkolla Fener ka përgatitur një platformë unike dhe
             <div class="row align-items-center justify-content-center justify-content-lg-start">
               <div class="col-xl-6 col-lg-6 col-md-8 col-xs-10">
                 <div class="content-image-group--l2-2">
-                  <img class="w-100" src="{{asset('front/image/home-2/l2-content-img-2.png')}}" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
-                  <div class="content-image-group--l2-2__img-1">
-                    <img class="w-100" src="{{asset('front/image/home-2/l2-content-2-shape-2.png')}}" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true" data-aos-delay="300">
-                  </div>
+                  <img class="w-100" src="{{asset('front/image/svg/ayah.svg')}}" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-8 col-xs-10">
