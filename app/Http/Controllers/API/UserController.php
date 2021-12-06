@@ -8,7 +8,8 @@ use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Laravel\Passport\RefreshToken;
+use Laravel\Passport\Token;
 class UserController extends Controller
 {
     /**
@@ -21,7 +22,11 @@ class UserController extends Controller
         return new UserCourseResource(Auth::user());
     }
 
-
+    public function logout(){
+        $user = Auth::user()->token();
+        $user->revoke();
+        return 'logged out'; // modify as per your need
+    }
 
     /**
      * Store a newly created resource in storage.
