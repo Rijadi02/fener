@@ -27,6 +27,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('user/logout', [UserController::class, 'logout']);
+
 //register controller
 Route::post('register', [RegisterController::class, "create_api"]);
 
