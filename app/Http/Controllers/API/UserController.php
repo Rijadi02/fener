@@ -23,10 +23,10 @@ class UserController extends Controller
     }
 
     public function logout(){
-        // $user = Auth::user()->token();
-        // $user->revoke();
-        // return 'logged out'; // modify as per your need
-        return 'bleron kinguuuuuuuuuuuuu';
+        $user = Auth::user()->token();
+        $user->revoke();
+        return 'logged out'; // modify as per your need
+        // return 'bleron kinguuuuuuuuuuuuu';
     }
 
     /**
