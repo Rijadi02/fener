@@ -10,6 +10,7 @@ use App\Http\Controllers\API\UserController;
 
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,7 +28,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('logout', [UserController::class, 'logout']);
+Route::middleware('auth:api')->post('/user/logout', function (Request $request) {
+    $user = Auth::user()->token();
+    $user->revoke();
+    return 'logged out';
+});
+
 
 //register controller
 Route::post('register', [RegisterController::class, "create_api"]);

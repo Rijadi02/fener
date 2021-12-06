@@ -22,12 +22,6 @@ class UserController extends Controller
         return new UserCourseResource(Auth::user());
     }
 
-    public function logout(){
-        $user = Auth::user()->token();
-        $user->revoke();
-        return 'logged out'; // modify as per your need
-        // return 'bleron kinguuuuuuuuuuuuu';
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -73,4 +67,11 @@ class UserController extends Controller
     {
         //
     }
+
+    public function logout(){
+        $user = Auth::user()->token();
+        $user->revoke();
+        return 'logged out';
+    }
+
 }
