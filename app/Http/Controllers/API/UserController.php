@@ -65,6 +65,7 @@ class UserController extends Controller
      */
     public function destroy($user)
     {
+        dd(Auth::user()->id);
         // return $user;
         if($user == Auth::user()->id){
             $useri = User::where('id', $user);
