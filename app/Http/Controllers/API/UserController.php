@@ -64,9 +64,10 @@ class UserController extends Controller
      */
     public function destroy($user)
     {
-        $useri = User::where('id', $user);
-        $useri->delete();
-        return "Deleted succesfully!";
+        return $user;
+        // $useri = User::where('id', $user);
+        // $useri->delete();
+        // return "Deleted succesfully!";
     }
 
 
