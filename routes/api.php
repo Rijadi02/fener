@@ -58,7 +58,7 @@ Route::apiResource('/tickets', TicketsController::class);
 Route::apiResource('/enrollments', UserController::class)->middleware('auth:api');
 
 
-Route::delete('user/{id}/destroy', [UserController::class, "destroy"])->middleware('auth:api');
+Route::delete('user/{id}/destroy', [UserController::class, "destroy"])->middleware('teacher');
 
 
 
