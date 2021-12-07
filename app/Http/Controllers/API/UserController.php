@@ -65,12 +65,12 @@ class UserController extends Controller
      */
     public function destroy($user)
     {
-        dd(Auth::user()->id);
+        // dd(Auth::user()->id);
         // return $user;
         if($user == Auth::user()->id){
             $useri = User::where('id', $user);
             $useri->delete();
-            return Auth::user()->name."Deleted succesfully!";
+            return "Deleted succesfully!";
         }else{
             return "403 not authorized";
         }
