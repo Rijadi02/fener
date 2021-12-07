@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Passport\RefreshToken;
 use Laravel\Passport\Token;
+use Illuminate\Support\Facades\Route;
 class UserController extends Controller
 {
     /**
@@ -65,7 +66,7 @@ class UserController extends Controller
     public function destroy($user)
     {
         // return $user;
-        if($user->id == Auth::user()->id){
+        if($user == Auth::user()->id){
             $useri = User::where('id', $user);
             $useri->delete();
             return Auth::user()->name."Deleted succesfully!";
