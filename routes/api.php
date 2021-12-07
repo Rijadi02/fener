@@ -39,9 +39,9 @@ Route::middleware('auth:api')->post('/user/logout', function (Request $request) 
 //Users
 Route::post('register', [RegisterController::class, "create_api"]);
 
-Route::middleware(['auth'])->group(function () {
-    Route::delete('user/{id}/delete', [UserController::class, "destroy"]);
-});
+
+
+
 //blog apis
 Route::apiResource('/blogs', BlogController::class);
 
@@ -56,6 +56,12 @@ Route::apiResource('/tickets', TicketsController::class);
 
 //tickets
 Route::apiResource('/enrollments', UserController::class)->middleware('auth:api');
+
+
+Route::group(['middleware' => ['auth:api']], function () {
+    Route::delete('user/{id}', [UserController::class, "destroy"]);
+});
+
 
 
 
