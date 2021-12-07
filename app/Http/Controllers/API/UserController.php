@@ -68,6 +68,7 @@ class UserController extends Controller
         // $useri = User::where('id', $user);
         // $useri->delete();
         // return "Deleted succesfully!";
+        
     }
 
 
