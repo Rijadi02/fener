@@ -35,9 +35,13 @@ Route::middleware('auth:api')->post('/user/logout', function (Request $request) 
 });
 
 
-//register controller
+
+//Users
 Route::post('register', [RegisterController::class, "create_api"]);
 
+Route::middleware(['auth'])->group(function () {
+    Route::delete('user/{id}/delete', [UserController::class, "destroy"]);
+});
 //blog apis
 Route::apiResource('/blogs', BlogController::class);
 

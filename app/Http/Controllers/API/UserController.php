@@ -42,7 +42,6 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        //
     }
 
     /**
@@ -63,15 +62,13 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy($user)
     {
-        //
+        $useri = User::where('id', $user);
+        $useri->delete();
+        return "Deleted succesfully!";
     }
 
-    public function logout(){
-        $user = Auth::user()->token();
-        $user->revoke();
-        return 'logged out';
-    }
+
 
 }
