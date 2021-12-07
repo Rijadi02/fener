@@ -17,7 +17,7 @@ class checkTeacher
      */
     public function handle(Request $request, Closure $next)
     {
-        dd(Auth::id());
+        dd(Auth::user()->id);
         if(Auth::id() == null){
             Auth::logout();
         }
