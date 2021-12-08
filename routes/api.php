@@ -33,32 +33,39 @@ Route::middleware('auth:api')->post('/user/logout', function (Request $request) 
     $user->revoke();
     return 'logged out';
 });
+Route::post('/register', [RegisterController::class, "create_api"]);
 
+//Teacher API-s
+Route::group(['middleware' => ['teacher']], function () {
+    Route::apiResource('/libraries', LibraryController::class);
+    Route::apiResource('/tickets', TicketsController::class);
+    Route::apiResource('/enrollments', UserController::class);
 
+});
 
-//Users
-Route::post('register', [RegisterController::class, "create_api"]);
+//Student API's
+Route::group(['middleware' => ['student']], function () {
+    Route::apiResource('/blogs', BlogController::class);
+    Route::apiResource('/galleries', GalleryController::class);
 
+});
 
+//User API's
 
+Route::group(['middleware' => ['auth:api']], function () {
+    Route::delete('user/{id}/destroy', [UserController::class, "destroy"])->middleware('auth:api');
+});
 
 //blog apis
-Route::apiResource('/blogs', BlogController::class);
 
 //gallery api's
-Route::apiResource('/galleries', GalleryController::class);
 
 //libary
-Route::apiResource('/libraries', LibraryController::class);
 
 //tickets
-Route::apiResource('/tickets', TicketsController::class);
 
 //tickets
-Route::apiResource('/enrollments', UserController::class)->middleware('auth:api');
 
-
-Route::delete('user/{id}/destroy', [UserController::class, "destroy"])->middleware('teacher');
 
 
 

@@ -4,9 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class checkTeacher
+class checkStudent
 {
     /**
      * Handle an incoming request.
@@ -17,15 +16,14 @@ class checkTeacher
      */
     public function handle(Request $request, Closure $next)
     {
-
-        $check = auth()->guard('api')->check();
         $user = auth()->guard('api')->user();
-        if($user ? $user->role_id : null == 1 && $check){
+        $check = auth()->guard('api')->check();
+
+        if($user ? $user->role_id : null == 0 && $check){
             return $next($request);
         }
-
         return response()->json([
-            'message' => 'Not authorized as Teacher.'
+            'message' => 'Not authorized as Student.'
         ], 403);
 
     }
