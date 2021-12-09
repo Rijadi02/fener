@@ -48,7 +48,36 @@ class CoursesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $data = request()->validate(
+            [
+                'title' => 'required',
+                'img' => 'required|image',
+                'description' => 'required',
+                'price' => 'required',
+                'user_id' => 'required',
+            ]
+        );
+
+
+        $course = new \App\Models\Courses();
+
+        $course->title = $data['title'];
+        $course->img = $data['img'];
+        $course->description = $data['description'];
+        $course->price = $data['price'];
+        $course->user_id = $data['user_id'];
+
+        if (request('img')) {
+            $inputs['img'] = request('img')->store('uploads', 'public');
+            $course->img = $inputs['img'];
+        } else {
+            $course->img = 'null';
+        }
+
+        $course->save();
+
+        return $course;
     }
 
     /**
