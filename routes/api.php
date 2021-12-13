@@ -75,7 +75,7 @@ Route::group(['middleware' => ['auth:api']], function () {
 //working on it
 
 //courses api's
-Route::apiResource('/courses', CoursesController::class);
+// Route::apiResource('/courses', CoursesController::class);
 Route::get('/courses/{course}/lectures/', [CoursesController::class, 'get_course_lectures']);
 Route::get('/courses/{course}/homeworks/', [CoursesController::class, 'get_course_homeworks']);
 Route::get('/courses/{course}/materials/', [CoursesController::class, 'get_course_materials']);
