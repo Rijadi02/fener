@@ -55,7 +55,7 @@ class CoursesController extends Controller
                 'img' => 'required|image',
                 'description' => 'required',
                 'price' => 'required',
-                'user_id' => 'required',
+                // 'user_id' => 'required',
             ]
         );
 
@@ -66,7 +66,8 @@ class CoursesController extends Controller
         $course->img = $data['img'];
         $course->description = $data['description'];
         $course->price = $data['price'];
-        $course->user_id = $data['user_id'];
+        $course->user_id = auth()->guard('api')->user()->id;
+
 
         if (request('img')) {
             $inputs['img'] = request('img')->store('uploads', 'public');
