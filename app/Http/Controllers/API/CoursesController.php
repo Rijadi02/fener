@@ -49,15 +49,28 @@ class CoursesController extends Controller
     public function store(Request $request)
     {
 
+        if ($request->hasFile('img')) {
+            $name = $request->file('img')->getClientOriginalName();
+            dd($name);
+        }
+
         $data = request()->validate(
             [
                 'title' => 'required',
-                'img' => 'required|image',
+                'img' => '',
                 'description' => 'required',
                 'price' => 'required',
                 // 'user_id' => 'required',
             ]
         );
+
+        // $request->validate([
+        //     'title' => 'required',
+        //     'description' => 'required',
+        //     'price' => 'required',
+        //     'img' => 'required',
+        // ]);
+
 
 
         $course = new \App\Models\Courses();

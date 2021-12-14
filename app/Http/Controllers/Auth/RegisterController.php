@@ -76,7 +76,8 @@ class RegisterController extends Controller
 
     protected function create_api(Request $data)
     {
-        $validated = $data->validate([
+
+        $data->validate([
             'name' => 'required',
             'password' => 'required|min:8',
             'email' => 'required|email|unique:users,email',
