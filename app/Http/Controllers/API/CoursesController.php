@@ -48,7 +48,7 @@ class CoursesController extends Controller
      */
     public function store(Request $request)
     {
-
+        return $request;
 
         if ($request->hasFile('img')) {
             $name = $request->file('img')->getClientOriginalName();
