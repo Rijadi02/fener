@@ -49,11 +49,12 @@ class CoursesController extends Controller
     public function store(Request $request)
     {
 
+
         if ($request->hasFile('img')) {
             $name = $request->file('img')->getClientOriginalName();
             return $name;
         }else{
-            return 'ska hiq file o bleron lludi';
+            return 'bleron kungulli, ska file';
         }
 
         $data = request()->validate(
@@ -93,7 +94,7 @@ class CoursesController extends Controller
 
         $course->save();
 
-        return $course;
+        // return $course;
     }
 
     /**
