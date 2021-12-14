@@ -52,6 +52,8 @@ class CoursesController extends Controller
         if ($request->hasFile('img')) {
             $name = $request->file('img')->getClientOriginalName();
             return $name;
+        }else{
+            return 'ska hiq file o bleron lludi';
         }
 
         $data = request()->validate(
