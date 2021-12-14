@@ -51,7 +51,7 @@ class CoursesController extends Controller
 
         if ($request->hasFile('img')) {
             $name = $request->file('img')->getClientOriginalName();
-            dd($name);
+            return $name;
         }
 
         $data = request()->validate(
