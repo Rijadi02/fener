@@ -48,13 +48,13 @@ class CoursesController extends Controller
      */
     public function store(Request $request)
     {
-        
+
 
         if ($request->hasFile('img')) {
             $name = $request->file('img')->getClientOriginalName();
             return $name;
         }else{
-            return 'bleron kungulli, ska file';
+            return 'bleron KINGU, ska file';
         }
 
         $data = request()->validate(
