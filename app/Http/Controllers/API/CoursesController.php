@@ -54,7 +54,7 @@ class CoursesController extends Controller
         $data = request()->validate(
             [
                 'title' => 'required',
-                'img' => '',
+                'img' => 'required',
                 'description' => 'required',
                 'price' => 'required',
                 // 'user_id' => 'required',
