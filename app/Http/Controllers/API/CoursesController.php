@@ -50,12 +50,6 @@ class CoursesController extends Controller
     {
 
 
-        if ($request->hasFile('img')) {
-            $name = $request->file('img')->getClientOriginalName();
-            return $name;
-        }else{
-            return 'bleron KINGU, ska file';
-        }
 
         $data = request()->validate(
             [
@@ -94,7 +88,7 @@ class CoursesController extends Controller
 
         $course->save();
 
-        // return $course;
+        return $course;
     }
 
     /**
