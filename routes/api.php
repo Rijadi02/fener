@@ -80,11 +80,9 @@ Route::get('/courses/{course}/lectures/', [CoursesController::class, 'get_course
 Route::get('/courses/{course}/homeworks/', [CoursesController::class, 'get_course_homeworks']);
 Route::get('/courses/{course}/materials/', [CoursesController::class, 'get_course_materials']);
 Route::post('/courses/store', [CoursesController::class, 'store']);
-//qeta posht e shlyn
+Route::get('/courses', [CoursesController::class, 'index']);
 
-Route::post('/sample-restful-apis', [CoursesController::class, 'uploadimage'])->name('sample-restful-apis');
 
-//deri qetu
 //lectures api's
 //all lectures
 Route::apiResource('/lectures', LecturesController::class);

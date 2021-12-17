@@ -91,26 +91,7 @@ class CoursesController extends Controller
         return $course;
     }
 
-//qeta posht e shlyn
-    public function uploadimage(Request $request)
-    {
-      //check file
-      if ($request->hasFile('image'))
-      {
-            $file      = $request->file('image');
-            $filename  = $file->getClientOriginalName();
-            $extension = $file->getClientOriginalExtension();
-            $picture   = date('His').'-'.$filename;
-            //move image to public/img folder
-            $file->move(public_path('img'), $picture);
-            return response()->json(["message" => "Image Uploaded Succesfully"]);
-      }
-      else
-      {
-            return response()->json(["message" => "Select image first."]);
-      }
-    }
-//deri qetu
+
     /**
      * Display the specified resource.
      *
